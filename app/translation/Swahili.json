@@ -1,0 +1,275 @@
+{
+    "translation": {
+      "LoginPage_loginText": "Ingia kwenye akaunti yako",
+      "LoginPage_PhoneNumber": "Nambari ya simu",
+      "LoginPage_pin": "Siri kanuni",
+      "LoginPage_loginBtn": "Ingia",
+      "LoginPage_signUp": "JisajiliSign Up",
+      "LoginPage_forgotPin": "Umesahau Nenosiri",
+      "LoginPage_reportIssue": "Bofya hapa ili kuripoti tatizo kwenye akaunti yako",
+      "Images": "Picha",
+
+      "ForgotPin_openingTaxt": "Umesahau nenosiri yako?",
+      "ForgotPin_recoveryEmail": "Barua pepe ya Urejeshaji",
+      "ForgotPin_btn": "Weka upya",
+      "ForgotPin_signUp": "Jisajili",
+      "ForgotPin_login": "Ingia",
+
+
+      "Signup_loginbtn": "Ingia",
+      "Signup_forgotPin_btn": "Nitumie barua pepe",
+      "Signup_nextbtn": "Inayofuata",
+      "Signup_Do_Laterbtn": "Fanya hivi baadaye",
+
+      "Signup_OpeningText": "Taarifa za Kibinafsi",
+      "Signup_page1text": "Fungua akaunti yako na nambari yako ya simu na barua pepe",
+      "Signup_phoneNumber": "Nambari ya simu",
+      "Signup_firstName": "Jina la kwanza",
+      "Signup_lastName": "Jina la familia",
+      "Signup_email": "Barua pepe",
+      "Signup_pin": "nambari ya siri",
+
+      "Signup_tellUsMore": "Tuambie zaidi kukuhusu",
+      "Signup_page2text": "Toa maelezo machache zaidi kukuhusu",
+      "Signup_age": "Umri",
+      "Signup_SelectAge": "Chagua kipindi cha umri",
+      "Signup_gender": "Jinsia",
+      "Signup_selectGender": "Tafadhali chagua jinsia",
+      "Signup_town": "Mji / Jiji",
+      "Signup_State": "Jimbo/mkoa",
+
+      "Signup_beFound": "Kupatikana na wengine!",
+      "Signup_page3text": "Wasaidie wengine kukupata kwa kutoa maelezo zaidi",
+      "Signup_aboutMe": "Kuhusu mimi",
+      "Signup_facebook": "Kiungo cha Wasifu wa Facebook",
+      "Signup_linkedin": "Kiungo cha Wasifu wa Linkedin",
+      "Signup_website": "Kiungo cha Tovuti ya kibinafsi",
+
+      "Signup_beProfessional": "Kuwa Professional!",
+      "Signup_page4text": "Tuambie kuhusu eneo lako la kazi na kile unachofanya",
+      "Signup_placeOfWork": "Mahali pa Kazi",
+      "Signup_jobTitle": "Kazi",
+
+      "Signup_areas_of_interest": "Maslahi",
+      "Signup_page5text": "Pokea machapisho yaliyoundwa kwa ajili yako",
+      "Intrest_Bu": "Biashara",
+      "Interest_Lau": "Kicheko",
+      "Interest_Flir": "Kutaniana",
+      "Interest_Fun": "Kufurahisha",
+      "Signup_allDone_btn": "Yote Yamekamilika",
+
+
+      "Convos": "Convos",
+      "Topics_muteTopic": "Bubu mada hii",
+      "Topics_flag": "Weka alama kama isiyofaa",
+      "Topics_FollowBtn" : "Fuata",
+      "Topic_EditTopic": "Hariri Mada",
+      "Topic_Comments" : "Maoni",
+      "Topic_Likes": "Likes",
+      "convos_SubMenu" : "Ondoa kwenye convos",
+
+      "BottomNav_topic": "Mada",
+      "BottomNav_groups": "Vikundi",
+      "BottomNav_chats": "Soga",
+      "BottomNav_search": "Tafuta",
+
+
+      "SideNav_profile": "Maelezo mafupi",
+      "SideNav_postTopic": "Chapisha Mada",
+      "SideNav_createGroup": "Unda kikundi",
+      "SideNav_settings": "Mipangilio",
+      "SideNav_Credit": "Credits",
+      "SideNav_helpDesk": "Deski la msaada",
+      "SideNav_logout": "Kuondoka",
+
+
+      "PostTopic_title": "Chapisha Mada",
+      "PostTopic_typeMessage": "Charaza ujumbe",
+      "PostTopic_attachFile": "Ambatisha faili",
+      "PostTopic_camera": "Kamera",
+      "PostTopic_gallery": "Nyumba ya sanaa",
+      "PostTopic_audio": "Sauti",
+      "PostTopic_video": "Video",
+      "PostTopic_document": "Hadi",
+      "PostTopic_relatedTopics": "Chagua lebo za chapisho hili",
+      "PostTopic_postbtn": "Shiriki",
+      "PostTopic_prevbtn": "Kutazama kabla",
+      "PostTopic_alert": "Idadi ya juu zaidi ya chaguo unaweza kuchagua ni 3",
+
+
+      "comments_title": "Maoni",
+      "comments_timestamp": "days ago",
+      "comments_share": "Shiriki",
+      "comments_likes": "Likes",
+      "comments_comments": "Maoni",
+      "comments_typeMessage": "Chapa ujumbe",
+
+
+      "Search_searchText": "Tafuta kwa neno kuu",
+      "Search_filter": "Chuja",
+      "Search_users": "Watumiaji",
+      "Search_chats": "Soga",
+      "Search_groups": "Vikundi",
+      "Search_topics": "Mada",
+      "Search_comments": "Maoni",
+      "Search_subComments": "Maoni madogo",
+
+      "Chats_viewProfile": "Tazama Wasifu",
+      "Chats_blockUser": "Zuia Mtumiaji",
+      "Chats_reportUser": "Ripoti mtumiaji",
+      "Chats_closeChat": "Funga soga",
+      "Chats_message": "Ujumbe",
+      "Chats_att_camera": "Kamera",
+      "Chats_att_images": "Picha",
+      "Chats_att_audio": "Sauti",
+      "Chats_att_contact": "mwenzi",
+      "Chats_att_document": "Hati",
+
+
+      "Groups_": "Vikundi Vyangu",
+      "Groups_joinGroups": "Jiunge na kikundi",
+      "Groups_members": "Wanachama",
+      "Groups_TaptoJoin": "Gusa ili Kujiunga",
+      "Groups_SearchGroup" : "Tafuta kwenye Group",
+
+      "MyGroupsPage_opt_reportGroup": "Ripoti kundi hili",      
+      "MyGroups_opt_muteGroup": "Nyamazisha kikundi hiki",
+      "MyGroups_opt_leaveGroup": "Ondoka kwenye kundi hili",
+
+      "Groups_opt_groupInfo": "Maelezo ya kikundi",
+      "Groups_opt_reportGroup": "Kikundi cha Ripoti",
+      "Groups_opt_exitGroup": "Toka kwenye Kikundi",
+
+      "GroupDesc_description": "Maelezo",
+      "GroupDesc_join": "Jiunge",
+      "GroupDesc_joined": "Imejiunga",
+      "GroupDesc_link": "Nakili Kiungo cha Kikundi",
+      "GroupDesc_members": "Wanachama",
+      "GroupDesc_creator": "Muumba",
+      "GroupDesc_exit": "Toka kwenye Kikundi",
+
+      "ReportGroup_text": "Maelezo",
+      "ReportGroup_message": "Chapa ujumbe",
+      "ReportGroup_sendbtn": "Tuma",
+
+      "CreateGroup_title": "Unda kikundi",
+      "CreateGroup_groupName": "Jina la kundi",
+      "CreateGroup_Description": "Maelezo ya Kikundi",
+      "CreateGroup_tags": "Chagua lebo zinazofaa kwa kikundi hiki",
+      "CreateGroup_button": "Unda kikundi",
+
+
+      "profile_bio": "Kuhusu mimi",
+      "profile_website": "Tovuti",
+      "profile_facebook": "Facebook",
+      "profile_linkedIn": "Linkedin",
+      "profile_company": "Kampuni",
+      "profile_position": "nafasi katika kampuni",
+      "profile_genderM": "Kiume",
+      "profile_genderF": "Kike",
+      "profile_message": "Ongea na",
+      "profile_topics": "Mada",
+      "profile_groups": "Vikundi",
+
+      "PersonalProfile_edit": "Hariri wasifu",
+
+      "EditProfile_Bio" : "Bio",
+      "EditProfile_SelectAge": "Tafadhali chagua Masafa ya Umri",
+      "EditProfile_genderM": "Kiume",
+      "EditProfile_genderF": "Kike",
+      "EditProfile_SelectGender": "Tafadhali chagua jinsia",
+      "EditProfile_town": "Mji",
+      "EditProfile_State": "Jimbo / Mkoa",
+      "EditProfile_Placeholder_website": "Tovuti",
+      "EditProfile_Placeholder_facebook": "Weka kiungo chako cha Wasifu kwenye Facebook",
+      "EditProfile_Placeholder_linkedIn": "Weka kiungo chako cha Wasifu wa Linkedin",
+      "EditProfile_Placeholder_company": "Ingiza mahali pako pa kazi",
+      "EditProfile_Placeholder_position": "nafasi katika kampuni",
+      "EditProfile_Btn": "Sasisha",
+
+
+      "HelpDesk_": "Deski la msaada",
+      "HelpDesk_compose": "Tunga",
+      "HelpDesk_reply": "Jibu",
+      "HelpDesk_helpText": "Tuambie jinsi tunavyoweza kukusaidia",
+      "HelpDesk_category": "Kategoria",
+      "HelpDesk_categroryDrop": "Tafadhali teua kategoria",
+      "Helpdesk_category_GI" : "Swali la Jumla",
+      "Helpdesk_category_AC" : "Programu kushindwa",
+      "Helpdesk_category_FR" : "Ombi la Kipengele",
+      "Helpdesk_category_S" : "Mapendekezo",
+      "Helpdesk_category_PI" : "Masuala ya Malipo",
+      "Helpdesk_category_O" : "Wengine",
+      "HelpDesk_messageTitle": "kichwa",
+      "HelpDesk_details": "Maelezo kamili",
+      "HelpDesk_messageBox": "Charaza ujumbe wako",
+      "HelpDesk_sendBtn": "Tuma",
+      "HelpDesk_feedback1": "Ujumbe umetumwa",
+      "HelpDesk_feedback2": "Tutarudi kwako hivi karibuni",
+
+
+      "Settings_editprofile": "Hariri wasifu",
+      "Settings_preferences": "Mapendeleo",
+      "Settings_interest": "Maeneo ya maslahi",
+      "Settings_language": "Badilisha Lugha",
+      "Settings_account": "Akaunti",
+      "Settings_pin": "Badilisha nambari ya siri",
+      "Settings_blockedChats": "Gumzo Zilizozuiwa",
+      "Settings_help": "Msaada",
+      "Settings_userTerms": "Masharti ya matumizi",
+      "Settings_About": "Kuhusu Pennytots",
+
+
+      "AreasOfInterest_": "Maeneo ya Maslahi",
+      "AreasOfInterest_text": "Chagua mada zinazokuvutia",
+      "AreasOfInterest_button": "Kufanyika",
+
+
+      "Language": "Chagua lugha",
+      "Language_TitleText": "Chagua lugha unayopendelea",
+      "Language_dropDown": "Tafadhali chagua lugha",
+      "Language_button": "Badilisha Lugha",
+
+
+      "ChangePin_title": "Badilisha msimbo wa siri",   
+      "ChangePin_currentPin": "Nambari ya siri ya sasa",
+      "ChangePin_currrentPinPlaceholder": "Weka nambari ya siri ya sasa",
+      "ChangePin_newPin": "Nambari mpya ya siri",
+      "ChangePin_newPinPlaceholder": "Weka nambari mpya ya siri",
+      "ChangePin_button": "Hifadhi",
+
+
+      "BlockedChats": "Gumzo Zilizozuiwa",
+      "BlockedChats_opt1": "ondoa kizuizi kwa mtumiaji huyu",
+      "BlockedChats_opt2": "Ripoti mtumiaji huyu",
+
+
+      "UserTerms": "Masharti ya matumizi",
+      "UserTerm_terms": "",
+
+
+      "AboutPennytots": "Kuhusu Pennytots",
+      "AboutPennytots_aboutText":
+       "Pennytot is the corporate social responsibility (CSR) application of Laten Geuberen Limited, Canada: [Link to Company website]. It is dedicated to people going through tough times and by people who care enough to provide support through hugs, kind words and recommendations. Pennytots is promoted in dofferent countries by popular online influencers who are known for their humanitarian activities such as donations to charities, individuals in need, to promote pennytots in reaching more people, or to build its capabilities for users. If you wish to be part of our mission, please reach out to us here: [Help Desk Link]. If you want to make a donationn you may do so here [Donation link] ",
+       
+       "Credits_Title": "Credits",
+       "Credits_balance": "Salio langu la sasa la Pennytots",
+       "Credits_purchase": "kununua",
+       "Credits_free": "Pennytots za bure",
+       "Credits_History": "Historia ya Ununuzi",
+       "Credits_purchasePennytots": "Nunua Pennytots",
+       "Credits_purchaseText":"Unaweza kufanya ununuzi wa chini wa Pennytots 2000",
+       "Credits_proceedBtn": "Endelea",
+
+
+       "Alerts": ""
+      
+
+
+
+
+
+
+    }
+  }
+  

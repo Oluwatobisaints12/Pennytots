@@ -1,0 +1,268 @@
+{
+
+      "LoginPage_loginText": "Connexion à votre compte",
+      "LoginPage_PhoneNumber": "Numéro de téléphone",
+      "LoginPage_pin": "NIP",
+      "LoginPage_loginBtn": "Connexion",
+      "LoginPage_signUp": "S'inscrire",
+      "LoginPage_forgotPin": "Mot de passe oublié",
+      "LoginPage_reportIssue": "Cliquez ici pour signaler un problème avec votre compte",
+
+
+      "ForgotPin_openingTaxt": "Mot de passe oublié?",
+      "ForgotPin_recoveryEmail": "E-mail de récupération",
+      "ForgotPin_btn": "Réinitialiser",
+      "ForgotPin_signUp": "S'inscrire",
+      "ForgotPin_login": "Mot de passe oublié",
+
+
+      "Signup_loginbtn": "Connexion",
+      "Signup_forgotPin_btn": "Mot de passe oublié",
+      "Signup_nextbtn": "Prochain",
+      "Signup_Do_Laterbtn": "Faites-le plus tard",
+
+      "Signup_OpeningText": "Information personnelle",
+      "Signup_page1text": "Créer votre compte avec votre numéro de téléphone et email",
+      "Signup_phoneNumber": "Numéro de téléphone",
+      "Signup_firstName": "Prénom",
+      "Signup_lastName": "Nom de famille",
+      "Signup_email": "Email",
+      "Signup_pin": "Pin",
+
+      "Signup_tellUsMore": "Parlez-nous-en davantage sur vous",
+      "Signup_page2text": "Donnez quelques détails supplémentaires sur vous",
+      "Signup_age": "âge",
+      "Signup_SelectAge": "Veuillez sélectionner une tranche d'âge",
+      "Signup_gender": "le sexe",
+      "Signup_selectGender": "veuillez sélectionner un sexe",
+      "Signup_town": "Ville",
+      "Signup_State": "État / province",
+
+      "Signup_beFound": "Soyez trouvé par d'autres !",
+      "Signup_page3text": "Aidez les autres à vous trouver en fournissant plus d'informations",
+      "Signup_aboutMe": "À propos de moi",
+      "Signup_facebook": "Lien de profil Facebook",
+      "Signup_linkedin": "Lien de profil Linkedin",
+      "Signup_website": "Site Web personnel",
+
+      "Signup_beProfessional": "Sois professionnel",
+      "Signup_page4text": "Parlez-nous de votre lieu de travail et de ce que vous faites",
+      "Signup_placeOfWork": "Lieu de travail",
+      "Signup_jobTitle": "Titre d'emploi",
+
+      "Signup_areas_of_interest": "Intérêts",
+      "Signup_page5text": "Recevez des publications adaptées à vous",
+      "Intrest_Bu": "Entreprise",
+      "Interest_Lau": "Rire",
+      "Interest_Flir": "Flirter",
+      "Interest_Fun": "Amusement",
+      "Signup_allDone_btn": "Fini",
+
+
+      "Convos": "Convos",
+      "Topics_muteTopic": "sujet muet",
+      "Topics_flag": "Signaler comme inapproprié",
+      "Topics_FollowBtn" : "Suivre",
+      "Topic_EditTopic": "Modifier le sujet",
+      "Topic_Comments" : "commentaires",
+      "Topic_Likes": "Likes",
+      "convos_SubMenu" : "Supprimer de la convos",
+
+      "BottomNav_topic": "Sujets",
+      "BottomNav_groups": "groupes",
+      "BottomNav_chats": "Chats",
+      "BottomNav_search": "recherche",
+
+
+      "SideNav_profile": "Profil",
+      "SideNav_postTopic": "Publier un sujet",
+      "SideNav_createGroup": "Créer un groupe",
+      "SideNav_settings": "Paramètres",
+      "SideNav_Credit": "Crédits",
+      "SideNav_helpDesk": "bureau d'aide",
+      "SideNav_logout": "Se déconnecter",
+
+
+      "PostTopic_title": "Publier un sujet",
+      "PostTopic_typeMessage": "Saisissez votre Tot",
+      "PostTopic_attachFile": "Joindre un fichier",
+      "PostTopic_camera": "Caméra",
+      "PostTopic_gallery": "Galerie",
+      "PostTopic_audio": "l'audio",
+      "PostTopic_video": "Vidéo",
+      "PostTopic_document": "Document",
+      "PostTopic_relatedTopics": "Sélectionnez les relations avec ce tot",
+      "PostTopic_postbtn": "Partagez",
+      "PostTopic_prevbtn": "Aperçu",
+      "PostTopic_alert": "Le nombre maximum de sélection est de 3",
+
+
+      "comments_title": "commentaires",
+      "comments_timestamp": "days ago",
+      "comments_share": "Partagez",
+      "comments_likes": "Likes",
+      "comments_comments": "commentaires",
+      "comments_typeMessage": "Tapez un message",
+
+
+      "Search_searchText": "Recherche par mots-clés",
+      "Search_filter": "Filtre",
+      "Search_users": "Utilisateurs",
+      "Search_chats": "Chats",
+      "Search_groups": "Groupes",
+      "Search_topics": "Sujets",
+      "Search_comments": "commentaires",
+      "Search_subComments": "sous-commentaires",
+
+      "Chats_viewProfile": "Voir le profil",
+      "Chats_blockUser": "Bloquer l'Utilisateur",
+      "Chats_reportUser": "Signaler l'Utilisateur",
+      "Chats_closeChat": "fermer le chat",
+      "Chats_message": "Message",
+      "Chats_att_camera": "Caméra",
+      "Chats_att_images": "Images",
+      "Chats_att_audio": "l'audio",
+      "Chats_att_contact": "Contact",
+      "Chats_att_document": "Document",
+
+
+      "Groups_": "Mes groupes",
+      "Groups_joinGroups": "rejoindre le groupe",
+      "Groups_members": "Membres",
+      "Groups_TaptoJoin": "Appuyez pour rejoindre",
+      "Groups_SearchGroup" : "Rechercher dans le groupe",
+
+      "MyGroupsPage_opt_reportGroup": "Signaler ce groupe",      
+      "MyGroups_opt_muteGroup": "couper le son de ce groupe",
+      "MyGroups_opt_leaveGroup": "Quitter ce groupe",
+
+      "Groups_opt_groupInfo": "Informations sur le groupe",
+      "Groups_opt_reportGroup": "Signaler ce groupe",
+      "Groups_opt_exitGroup": "Quitter ce groupe",
+
+      "GroupDesc_description": "La description",
+      "GroupDesc_join": "Joindre",
+      "GroupDesc_joined": "Rejoint",
+      "GroupDesc_link": "Copier le lien du groupe",
+      "GroupDesc_members": "Membres",
+      "GroupDesc_creator": "Créateur",
+      "GroupDesc_exit": "quitter le groupe",
+
+      "ReportGroup_text": "la description",
+      "ReportGroup_message": "Tapez un message",
+      "ReportGroup_sendbtn": "Envoyer",
+
+      "CreateGroup_title": "Créer un groupe",
+      "CreateGroup_groupName": "Nom de groupe",
+      "CreateGroup_Description": "Description du groupe",
+      "CreateGroup_tags": "Sélectionnez les balises pertinentes pour ce groupe",
+      "CreateGroup_button": "Créer un groupe",
+
+
+      "profile_bio": "À propos de moi",
+      "profile_website": "Site Internet",
+      "profile_facebook": "Facebook",
+      "profile_linkedIn": "Linkedin",
+      "profile_company": "Compagnie",
+      "profile_position": "Position",
+      "profile_genderM": "Mâle",
+      "profile_genderF": "Femelle",
+      "profile_message": "Message",
+      "profile_topics": "Sujets",
+      "profile_groups": "Groupes",
+
+      "PersonalProfile_edit": "Editer le profil",
+
+      "EditProfile_Bio" : "Bio",
+      "EditProfile_SelectAge": "Veuillez sélectionner une tranche d'âge",
+      "EditProfile_genderM": "Mâle",
+      "EditProfile_genderF": "Femelle",
+      "EditProfile_SelectGender": "Veuillez sélectionner un sexe",
+      "EditProfile_town": "Ville",
+      "EditProfile_State": "État/Province",
+      "EditProfile_Placeholder_website": "Définir le Website",
+      "EditProfile_Placeholder_facebook": "Définir le lien du profil Facebook",
+      "EditProfile_Placeholder_linkedIn": "Définir le lien du profil LinkedIn",
+      "EditProfile_Placeholder_company": "Définir le lieu de travail",
+      "EditProfile_Placeholder_position": "Définir la position",
+      "EditProfile_Btn": "Mise à jour",
+
+      "HelpDesk_": "Bureau d'aide",
+      "HelpDesk_compose": "Composer",
+      "HelpDesk_reply": "Réponse",
+      "HelpDesk_helpText": "Dites-nous comment nous pouvons aider",
+      "HelpDesk_category": "Catégorie",
+      "HelpDesk_categroryDrop": "Veuillez sélectionner une catégorie",
+      "Helpdesk_category_GI" : "Demande Générale",
+      "Helpdesk_category_AC" : "plantage d'application",
+      "Helpdesk_category_FR" : "Demande de fonctionnalité",
+      "Helpdesk_category_S" : "Suggestions",
+      "Helpdesk_category_PI" : "Problèmes de paiement",
+      "Helpdesk_category_O" : "Autres",
+      "HelpDesk_messageTitle": "Titre",
+      "HelpDesk_details": "Tous les détails",
+      "HelpDesk_messageBox": "Tapez un message",
+      "HelpDesk_sendBtn": "Envoyer",
+      "HelpDesk_feedback1": "Message envoyé",
+      "HelpDesk_feedback2": "Nous vous répondrons",
+
+
+      "Settings_editprofile": "Editer le profil",
+      "Settings_preferences": "préférences",
+      "Settings_interest": "Centres d'intérêt",
+      "Settings_language": "Changer de langue",
+      "Settings_account": "Compte",
+      "Settings_pin": "changer le NIP",
+      "Settings_blockedChats": "Chats bloqués",
+      "Settings_help": "Aider",
+      "Settings_userTerms": "Conditions d'utilisation",
+      "Settings_About": "À propos des Pennytots",
+
+
+      "AreasOfInterest_": "centres d'intérêt",
+      "AreasOfInterest_text": "Sélectionnez les thèmes qui vous intéressent",
+      "AreasOfInterest_button": "Fini",
+
+
+      "Language": "Changer de langue",
+      "Language_TitleText": "choisissez votre langue préférée",
+      "Language_dropDown": "Veuillez sélectionner une langue",
+      "Language_button": "Changer de langue",
+
+
+      "ChangePin_title": "changer le NIP",   
+      "ChangePin_currentPin": "NIP actuel",
+      "ChangePin_currrentPinPlaceholder": "Entrez le code PIN actuel",
+      "ChangePin_newPin": "Nouveau NIP",
+      "ChangePin_newPinPlaceholder": "Saisir un nouveau NIP",
+      "ChangePin_button": "conserver",
+
+
+      "BlockedChats": "Chats bloqués",
+      "BlockedChats_opt1": "débloquer l'utilisateur",
+      "BlockedChats_opt2": "dénoncer un utilisateur",
+
+
+      "UserTerms": "Conditions d'utilisation",
+      "UserTerm_terms": "",
+
+
+      "AboutPennytots": "À propos des Pennytots",
+      "AboutPennytots_aboutText":
+       "Pennytot est l'application de responsabilité sociale des entreprises (RSE) de Laten Geuberen Limited, Canada : [Lien vers le site Web de l'entreprise]. Il est dédié aux personnes qui traversent des moments difficiles et aux personnes qui se soucient suffisamment de nous pour apporter leur soutien par des câlins, des mots gentils et des recommandations. Pennytots est promu dans différents pays par des influenceurs en ligne populaires connus pour leurs activités humanitaires telles que des dons à des œuvres de bienfaisance, des personnes dans le besoin, pour promouvoir les pennytots en atteignant plus de personnes ou pour renforcer ses capacités pour les utilisateurs. Si vous souhaitez faire partie de notre mission, veuillez nous contacter ici : [Help Desk Link]. Si vous souhaitez faire un don, vous pouvez le faire ici [Donate Link]",
+       
+
+       "Credits_Title": "Crédits",
+       "Credits_balance": "Mon solde Pennytots actuel",
+       "Credits_purchase": "Acheter",
+       "Credits_free": "Pennytots gratuits",
+       "Credits_History": "Historique d'achat",
+       "Credits_purchasePennytots": "Acheter des Pennytots",
+       "Credits_purchaseText":"Vous pouvez effectuer un achat minimum de 2000 Pennytots",
+       "Credits_proceedBtn": "Procéder",
+       "Images": "Image",
+       "Alerts": ""
+  }
+  
+
+ 

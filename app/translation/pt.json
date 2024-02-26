@@ -1,0 +1,266 @@
+{
+
+      "LoginPage_loginText": "Faça login na sua conta",
+      "LoginPage_PhoneNumber": "Número de telefone",
+      "LoginPage_pin": "PIN",
+      "LoginPage_loginBtn": "Conecte-se",
+      "LoginPage_signUp": "Inscrever-se",
+      "LoginPage_forgotPin": "Esqueceu a senha",
+      "LoginPage_reportIssue": "Clique aqui para relatar um problema com sua conta",
+
+
+      "ForgotPin_openingTaxt": "Esqueceu sua senha?",
+      "ForgotPin_recoveryEmail": "Email de recuperação",
+      "ForgotPin_btn": "Redefinir",
+      "ForgotPin_signUp": "Inscrever-se",
+      "ForgotPin_login": "Esqueceu a senha",
+
+
+      "Signup_loginbtn": "Conecte-se",
+      "Signup_forgotPin_btn": "Esqueceu a senha",
+      "Signup_nextbtn": "Próximo",
+      "Signup_Do_Laterbtn": "Faça isso mais tarde",
+
+      "Signup_OpeningText": "Informação pessoal",
+      "Signup_page1text": "Crie sua conta com seu número de telefone e e-mail",
+      "Signup_phoneNumber": "Número de telefone",
+      "Signup_firstName": "Sobrenome",
+      "Signup_lastName": "Primeiro nome",
+      "Signup_email": "E-mail",
+      "Signup_pin": "PIN",
+
+      "Signup_tellUsMore": "Conte-nos mais sobre você",
+      "Signup_page2text": "Dê mais alguns detalhes sobre você",
+      "Signup_age": "Idade",
+      "Signup_SelectAge": "Selecione uma faixa etária",
+      "Signup_gender": "Sexo",
+      "Signup_selectGender": "por favor, selecione um sexo",
+      "Signup_town": "Vila / Cidade",
+      "Signup_State": "Estado / Província",
+
+      "Signup_beFound": "Seja encontrado por outros",
+      "Signup_page3text": "Ajude outras pessoas a encontrar você fornecendo mais informações",
+      "Signup_aboutMe": "Sobre mim",
+      "Signup_facebook": "Link do perfil do Facebook",
+      "Signup_linkedin": "Link do perfil do Linkedin",
+      "Signup_website": "Site pessoal",
+
+      "Signup_beProfessional": "Seja profissional!",
+      "Signup_page4text": "Conte-nos sobre seu local de trabalho e o que você faz",
+      "Signup_placeOfWork": "Local de trabalho",
+      "Signup_jobTitle": "Posição de trabalho",
+
+      "Signup_areas_of_interest": "Interesses",
+      "Signup_page5text": "Receba postagens personalizadas para você",
+      "Intrest_Bu": "Negócios",
+      "Interest_Lau": "Risada",
+      "Interest_Flir": "Paquera",
+      "Interest_Fun": "Diversão",
+      "Signup_allDone_btn": "Tudo feito",
+
+
+      "Convos": "Conversas",
+      "Topics_muteTopic": "Silenciar Tópico",
+      "Topics_flag": "sinalizar como impróprio",
+      "Topics_FollowBtn" : "Seguir",
+      "Topic_EditTopic": "Editar tópico",
+      "Topic_Comments" : "Comentários",
+      "Topic_Likes": "Curtidas",
+      "convos_SubMenu" : "Remover da conversas",
+
+      "BottomNav_topic": "Tópicos",
+      "BottomNav_groups": "Grupos",
+      "BottomNav_chats": "bate-papos",
+      "BottomNav_search": "Busca",
+
+
+      "SideNav_profile": "Perfil",
+      "SideNav_postTopic": "Postar um tópico",
+      "SideNav_createGroup": "Crie um grupo",
+      "SideNav_settings": "Configurações",
+      "SideNav_Credit": "Créditos",
+      "SideNav_helpDesk": "Central de Ajuda",
+      "SideNav_logout": "Terminar sessão",
+
+
+      "PostTopic_title": "postar um tópico",
+      "PostTopic_typeMessage": "Digite a mensagem ",
+      "PostTopic_attachFile": "Anexar arquivo",
+      "PostTopic_camera": "Câmera",
+      "PostTopic_gallery": "Galeria",
+      "PostTopic_audio": "Áudio",
+      "PostTopic_video": "Video",
+      "PostTopic_document": "Documento",
+      "PostTopic_relatedTopics": "Selecione tópicos relacionados a este tot",
+      "PostTopic_postbtn": "Compartilhar",
+      "PostTopic_prevbtn": "Visualização",
+      "PostTopic_alert": "O número máximo de seleções é 3",
+
+
+      "comments_title": "Comentários",
+      "comments_timestamp": "days ago",
+      "comments_share": "Compartilhar",
+      "comments_likes": "Likes",
+      "comments_comments": "Comentários",
+      "comments_typeMessage": "Digite uma mensagem",
+
+
+      "Search_searchText": "Busca por palavra-chave",
+      "Search_filter": "Filtro",
+      "Search_users": "Usuários",
+      "Search_chats": "Conversa",
+      "Search_groups": "Grupos",
+      "Search_topics": "Tópicos",
+      "Search_comments": "Comentários",
+      "Search_subComments": "Subcomentários",
+
+      "Chats_viewProfile": "Ver perfil",
+      "Chats_blockUser": "Bloquear usuário",
+      "Chats_reportUser": "Reportar usuário",
+      "Chats_closeChat": "Fechar bate-papo",
+      "Chats_message": "Mensagem",
+      "Chats_att_camera": "Caméra",
+      "Chats_att_images": "Images",
+      "Chats_att_audio": "Áudio",
+      "Chats_att_contact": "Contacto",
+      "Chats_att_document": "Documento",
+
+
+      "Groups_": "Meus grupos",
+      "Groups_joinGroups": "Junte-se a grupos",
+      "Groups_members": "Membros",
+      "Groups_TaptoJoin": "Toque para participar",
+      "Groups_SearchGroup" : "Pesquise o grupo",
+
+      "MyGroupsPage_opt_reportGroup": "grupo de relatório",      
+      "MyGroups_opt_muteGroup": "Silenciar grupo",
+      "MyGroups_opt_leaveGroup": "Deixar o grupo",
+
+      "Groups_opt_groupInfo": "Informações do grupo",
+      "Groups_opt_reportGroup": "Grupo de relatórios",
+      "Groups_opt_exitGroup": "Sair do grupo",
+
+      "GroupDesc_description": "Descrição",
+      "GroupDesc_join": "Juntar",
+      "GroupDesc_joined": "Juntou",
+      "GroupDesc_link": "Copiar link do grupo",
+      "GroupDesc_members": "Membros",
+      "GroupDesc_creator": "Criador",
+      "GroupDesc_exit": "Sair do grupo",
+
+      "ReportGroup_text": "Descrição",
+      "ReportGroup_message": "Digite a mensagem",
+      "ReportGroup_sendbtn": "Mandar",
+
+      "CreateGroup_title": "Criar grupo",
+      "CreateGroup_groupName": "Nome do grupo",
+      "CreateGroup_Description": "Descrição do grupo",
+      "CreateGroup_tags": "Selecione tags relevantes para este grupo",
+      "CreateGroup_button": "Criar grupo",
+
+
+      "profile_bio": "Sobre mim",
+      "profile_website": "local na rede Internet",
+      "profile_facebook": "Facebook",
+      "profile_linkedIn": "Linkedin",
+      "profile_company": "companhia",
+      "profile_position": "Posição da empresa",
+      "profile_genderM": "Macho",
+      "profile_genderF": "Fêmea",
+      "profile_message": "Mensagem",
+      "profile_topics": "Tópicos",
+      "profile_groups": "Grupos",
+
+      "PersonalProfile_edit": "Editar Perfil",
+
+      "EditProfile_Bio" : "Bio",
+      "EditProfile_SelectAge": "Por favor selecione faixa etária",
+      "EditProfile_genderM": "Macho",
+      "EditProfile_genderF": "Fêmea",
+      "EditProfile_SelectGender": "Por favor selecione um sexo",
+      "EditProfile_town": "Cidade",
+      "EditProfile_State": "Estado/Província",
+      "EditProfile_Placeholder_website": "Definir site",
+      "EditProfile_Placeholder_facebook": "Definir link do perfil do Facebook",
+      "EditProfile_Placeholder_linkedIn": "Definir link do perfil do Linkedin",
+      "EditProfile_Placeholder_company": "Definir local de trabalho",
+      "EditProfile_Placeholder_position": "Definir posição",
+      "EditProfile_Btn": "Atualização",
+
+      "HelpDesk_": "Central de Ajuda",
+      "HelpDesk_compose": "Compor",
+      "HelpDesk_reply": "Responder",
+      "HelpDesk_helpText": "Diga-nos como podemos ajudar",
+      "HelpDesk_category": "Categoria",
+      "HelpDesk_categroryDrop": "Por favor, selecione uma categoria",
+      "Helpdesk_category_GI" : "Inquérito geral",
+      "Helpdesk_category_AC" : "Falha no aplicativo",
+      "Helpdesk_category_FR" : "Solicitação de recurso",
+      "Helpdesk_category_S" : "Sugestões",
+      "Helpdesk_category_PI" : "Problemas de pagamento",
+      "Helpdesk_category_O" : "Outros",
+      "HelpDesk_messageTitle": "Título",
+      "HelpDesk_details": "Detalhes completos",
+      "HelpDesk_messageBox": "Digite sua mensagem",
+      "HelpDesk_sendBtn": "Enviar",
+      "HelpDesk_feedback1": "Mensagem enviada",
+      "HelpDesk_feedback2": "Nós voltaremos para você em breve",
+
+
+      "Settings_editprofile": "Editar Perfil",
+      "Settings_preferences": "preferências",
+      "Settings_interest": "Áreas de interesse",
+      "Settings_language": "Mudar idioma",
+      "Settings_account": "Conta",
+      "Settings_pin": "Alterar PIN",
+      "Settings_blockedChats": "Chats bloqueados",
+      "Settings_help": "Ajuda",
+      "Settings_userTerms": "Termos do usuário",
+      "Settings_About": "Sobre Pennytots",
+
+
+      "AreasOfInterest_": "Áreas de interesse",
+      "AreasOfInterest_text": "Escolha os tópicos em que você está interessado",
+      "AreasOfInterest_button": "Feito",
+
+
+      "Language": "Mudar idioma",
+      "Language_TitleText": "Escolha o seu idioma preferido",
+      "Language_dropDown": "selecione um idiomae",
+      "Language_button": "Mudar idioma",
+
+
+      "ChangePin_title": "Alterar PIN",   
+      "ChangePin_currentPin": "PIN atual",
+      "ChangePin_currrentPinPlaceholder": "Insira o pino atual",
+      "ChangePin_newPin": "Novo pino",
+      "ChangePin_newPinPlaceholder": "Digite novo pino",
+      "ChangePin_button": "Guardar",
+
+
+      "BlockedChats": "Chats bloqueados",
+      "BlockedChats_opt1": "Desbloquear usuário",
+      "BlockedChats_opt2": "Reportar usuário",
+
+
+      "UserTerms": "Termos do usuário",
+      "UserTerm_terms": "",
+
+
+      "AboutPennytots": "Sobre Pennytots",
+      "AboutPennytots_aboutText":
+       "Pennytot is the corporate social responsibility (CSR) application of Laten Geuberen Limited, Canada: [Link to Company website]. It is dedicated to people going through tough times and by people who care enough to provide support through hugs, kind words and recommendations. Pennytots is promoted in dofferent countries by popular online influencers who are known for their humanitarian activities such as donations to charities, individuals in need, to promote pennytots in reaching more people, or to build its capabilities for users. If you wish to be part of our mission, please reach out to us here: [Help Desk Link]. If you want to make a donationn you may do so here [Donation link] ",
+       
+
+       "Credits_Title": "Créditos",
+       "Credits_balance": "Meu saldo atual de Pennytots",
+       "Credits_purchase": "Comprar",
+       "Credits_free": "Pennytots Grátis",
+       "Credits_History": "Histórico de Compra",
+       "Credits_purchasePennytots": "Comprar Pennytots",
+       "Credits_purchaseText":"Você pode fazer uma compra mínima de 2.000 Pennytots",
+       "Credits_proceedBtn": "Continuar",
+       "Images": "Imagem",
+       "Alerts": ""
+  }
+  

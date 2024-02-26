@@ -1,0 +1,275 @@
+{
+      "LoginPage_loginText": "تسجيل الدخول إلى حسابك",
+      "LoginPage_PhoneNumber": "رقم التليفون",
+      "LoginPage_pin": "الرمز السري",
+      "LoginPage_loginBtn": "تسجيل دخول",
+      "LoginPage_signUp": "قم بالتسجيل",
+      "LoginPage_forgotPin": "هل نسيت كلمة السر",
+      "LoginPage_reportIssue": "انقر هنا للإبلاغ عن مشكلة في حسابك",
+
+
+      "ForgotPin_openingTaxt": "هل نسيت كلمة المرور؟",
+      "ForgotPin_recoveryEmail": "البريد الإلكتروني",
+      "ForgotPin_btn": "إعادة تعيين",
+      "ForgotPin_signUp": "قم بالتسجيل",
+      "ForgotPin_login": "هل نسيت كلمة السر",
+
+
+      "Signup_loginbtn": "تسجيل دخول",
+      "Signup_forgotPin_btn": "هل نسيت كلمة السر",
+      "Signup_nextbtn": "التالي",
+      "Signup_Do_Laterbtn": "افعل هذا لاحقًا",
+
+      "Signup_OpeningText": "معلومات شخصية",
+      "Signup_page1text": "قم بإنشاء حسابك باستخدام رقم هاتفك والبريد الإلكتروني",
+      "Signup_phoneNumber": "رقم التليفون",
+      "Signup_firstName": "الاسم الاول",
+      "Signup_lastName": "الاسم الاخير",
+      "Signup_email": "البريد الإلكتروني",
+      "Signup_pin": "Pin",
+
+      "Signup_tellUsMore": "تخبرنا المزيد عنك",
+      "Signup_page2text": "أعط بعض التفاصيل الإضافية عنك",
+      "Signup_age": "العمر",
+      "Signup_SelectAge": "حدد الفئة العمرية",
+      "Signup_gender": "جنس تذكير أو تأنيث",
+      "Signup_selectGender": "حدد نوع الجنس",
+      "Signup_town": "البلدة / المدينة",
+      "Signup_State": "الولاية / المقاطعة",
+
+      "Signup_beFound": "كن مُعثَرًا عليه من قبل الآخرين",
+      "Signup_page3text": "ساعد الآخرين في العثور عليك من خلال توفير المزيد من المعلومات",
+      "Signup_aboutMe": "عني",
+      "Signup_facebook": "رابط الملف الشخصي على Facebook",
+      "Signup_linkedin": "رابط ملف تعريف لينكد إن",
+      "Signup_website": "موقع الويب الشخصي",
+
+      "Signup_beProfessional": "كن محترفًا!",
+      "Signup_page4text": "أخبرنا عن مكان عملك وماذا تفعل",
+      "Signup_placeOfWork": "مكان العمل",
+      "Signup_jobTitle": "مسمى وظيفي",
+
+      "Signup_areas_of_interest": "الإهتمامات",
+      "Signup_page5text": "احصل على منشورات مخصصة لك",
+      "Intrest_Bu": "اعمال",
+      "Interest_Lau": "الضحك",
+      "Interest_Flir": "يمزح",
+      "Interest_Fun": "المرح",
+      "Signup_allDone_btn": "منتهي",
+      "Images": "صورة",
+
+      "Convos": "محادثات",
+      "Topics_muteTopic": "موضوع كتم",
+      "Topics_flag": "ضع علامة كغير ملائم",
+      "Topics_FollowBtn" : "إتبع",
+      "Topic_EditTopic": "تحرير الموضوع",
+      "Topic_Comments" : "تعليقات",
+      "Topic_Likes": "الإعجابات",
+      "convos_SubMenu" : "Rإزالة من المحادثة",
+
+      "BottomNav_topic": "موضوعات",
+      "BottomNav_groups": "مجموعات",
+      "BottomNav_chats": "الدردشات",
+      "BottomNav_search": "يبحث",
+
+
+      "SideNav_profile": "ملف التعريف الشخصي",
+      "SideNav_postTopic": "انشر موضوع",
+      "SideNav_createGroup": "أنشئ مجموعة",
+      "SideNav_settings": "إعدادات",
+      "SideNav_Credit": "الاعتمادات",
+      "SideNav_helpDesk": "مكتب المساعدة",
+      "SideNav_logout": "تسجيل خروج",
+
+
+      "PostTopic_title": "انشر موضوع",
+      "PostTopic_typeMessage": "اكتب رسالة",
+      "PostTopic_attachFile": "إرفاق ملف",
+      "PostTopic_camera": "آلة تصوير",
+      "PostTopic_gallery": "صالة عرض",
+      "PostTopic_audio": "سمعي",
+      "PostTopic_video": "فيديو",
+      "PostTopic_document": "وثيقة",
+      "PostTopic_relatedTopics": "حدد الموضوعات المتعلقة بهذا 'tot'",
+      "PostTopic_postbtn": "شارك",
+      "PostTopic_prevbtn": "معاينة",
+      "PostTopic_alert": "الحد الأقصى لعدد التحديدات هو 3",
+
+
+      "comments_title": "  التعليقات",
+      "comments_timestamp": "days ago",
+      "comments_share": "شارك",
+      "comments_likes": "حب",
+      "comments_comments": "التعليقات",
+      "comments_typeMessage": "اكتب رسالة",
+
+
+      "Search_searchText": "البحث عن طريق الكلمات الرئيسية",
+      "Search_filter": "منقي",
+      "Search_users": "المستخدمون",
+      "Search_chats": "الدردشات",
+      "Search_groups": "مجموعات",
+      "Search_topics": "موضوعات",
+      "Search_comments": "تعليقات",
+      "Search_subComments": "التعليقات الفرعية",
+
+      "Chats_viewProfile": "عرض الصفحة الشخصية",
+      "Chats_blockUser": "قم بحظر المستخدم",
+      "Chats_reportUser": "الإبلاغ عن هذا المستخدم",
+      "Chats_closeChat": "إغلاق الدردشة",
+      "Chats_message": "رسالة",
+      "Chats_att_camera": "آلة تصوير",
+      "Chats_att_images": "الصور",
+      "Chats_att_audio": "سمعي",
+      "Chats_att_contact": "اتصال",
+      "Chats_att_document": "وثيقة",
+
+
+      "Groups_": "مجموعاتي",
+      "Groups_joinGroups": "إنضم للمجموعة",
+      "Groups_members": "أعضاء",
+      "Groups_TaptoJoin": "انقر للانضمام",
+      "Groups_SearchGroup" : "ابحث في المجموعة",
+
+      "MyGroupsPage_opt_reportGroup": "الإبلاغ عن هذه المجموعة",      
+      "MyGroups_opt_muteGroup": "مجموعة كتم الصوت",
+      "MyGroups_opt_leaveGroup": "ترك المجموعة",
+
+      "Groups_opt_groupInfo": "معلومات المجموعة",
+      "Groups_opt_reportGroup": "أبلغ عن هذه المجموعة",
+      "Groups_opt_exitGroup": "الخروج من المجموعة",
+
+      "GroupDesc_description": "وصف المجموعة",
+      "GroupDesc_join": "انضم",
+      "GroupDesc_joined": "موصول",
+      "GroupDesc_link": "نسخ ارتباط المجموعة",
+      "GroupDesc_members": "أعضاء",
+      "GroupDesc_creator": "خالق",
+      "GroupDesc_exit": "الخروج من المجموعة",
+
+      "ReportGroup_text": "وصف المجموعة",
+      "ReportGroup_message": "اكتب رسالة",
+      "ReportGroup_sendbtn": "إرسال",
+
+      "CreateGroup_title": "إنشاء مجموعة",
+      "CreateGroup_groupName": "أسم المجموعة",
+      "CreateGroup_Description": "وصف المجموعة",
+      "CreateGroup_tags": "حدد العلامات ذات الصلة بهذه المجموعة",
+      "CreateGroup_button": "إنشاء مجموعة",
+
+
+      "profile_bio": "عني",
+      "profile_website": "موقع الكتروني",
+      "profile_facebook": "Facebook",
+      "profile_linkedIn": "Linkedin",
+      "profile_company": "شركة",
+      "profile_position": "المنصب في الشركة",
+      "profile_genderM": "ذكر",
+      "profile_genderF": "إناثا",
+      "profile_message": "رسالة",
+      "profile_topics": "موضوعات",
+      "profile_groups": "مجموعات",
+
+      "PersonalProfile_edit": "تعديل ملف التعريف الشخصي",
+
+      "EditProfile_Bio" : "بيو",
+      "EditProfile_SelectAge": "الرجاء تحديد الفئة العمرية",
+      "EditProfile_genderM": "ذكر",
+      "EditProfile_genderF": "إناثا",
+      "EditProfile_SelectGender": "يرجى اختيار الجنس",
+      "EditProfile_town": "البلدة / المدينة",
+      "EditProfile_State": "الولاية/المقاطعة",
+      "EditProfile_Placeholder_website": "تعيين موقع الويب",
+      "EditProfile_Placeholder_facebook": "تعيين رابط الملف الشخصي على الفيسبوك",
+      "EditProfile_Placeholder_linkedIn": "قم بتعيين رابط الملف الشخصي على LinkedIn",
+      "EditProfile_Placeholder_company": "شركة",
+      "EditProfile_Placeholder_position": "تعيين الموقف",
+      "EditProfile_Btn": "التحديث",
+
+
+      "HelpDesk_": "مكتب المساعدة",
+      "HelpDesk_compose": "مكتب المساعدة",
+      "HelpDesk_reply": "الرد",
+      "HelpDesk_helpText": "قل لنا كيف يمكن أن تساعد",
+      "HelpDesk_category": "فئة",
+      "HelpDesk_categroryDrop": "الرجاء تحديد الفئة",
+      "Helpdesk_category_GI" : "استفسار عام",
+      "Helpdesk_category_AC" : "انهيار التطبيق",
+      "Helpdesk_category_FR" : "طلب الميزة",
+      "Helpdesk_category_S" : "اقتراحات",
+      "Helpdesk_category_PI" : "قضايا الدفع",
+      "Helpdesk_category_O" : "آحرون",
+      "HelpDesk_messageTitle": "عنوان",
+      "HelpDesk_details": "تفاصيل كاملة",
+      "HelpDesk_messageBox": "اكتب رسالة",
+      "HelpDesk_sendBtn": "إرسال",
+      "HelpDesk_feedback1": "الرسالة ارسلت",
+      "HelpDesk_feedback2": "سوف نعود اليك",
+
+
+      "Settings_editprofile": "تعديل الملف الشخصي",
+      "Settings_preferences": "التفضيلات",
+      "Settings_interest": "مجالات الاهتمام",
+      "Settings_language": "تغيير اللغة",
+      "Settings_account": "رصيد",
+      "Settings_pin": "تغيير رقم التعريف الشخصي",
+      "Settings_blockedChats": "الدردشات المحظورة",
+      "Settings_help": "مساعدة",
+      "Settings_userTerms": "شروط الاستخدام",
+      "Settings_About": "حول Pennytots",
+
+
+      "AreasOfInterest_": "مجالات الاهتمام",
+      "AreasOfInterest_text": "اختر الموضوعات التي تهتم بها",
+      "AreasOfInterest_button": "منجز",
+
+
+      "Language": "اختر لغة",
+      "Language_TitleText": "اختر لغتك المفضلة",
+      "Language_dropDown": "اختر لغتك المفضلة",
+      "Language_button": "تغيير اللغة",
+
+
+      "ChangePin_title": "تغيير رقم التعريف الشخصي",   
+      "ChangePin_currentPin": "الرقم السري الحالي",
+      "ChangePin_currrentPinPlaceholder": "أدخل رقم التعريف الشخصي الحالي",
+      "ChangePin_newPin": "كلمة سر جديدة",
+      "ChangePin_newPinPlaceholder": "أدخل رقم التعريف الشخصي الجديد",
+      "ChangePin_button": "حفظ",
+
+
+      "BlockedChats": "الدردشات المحظورة",
+      "BlockedChats_opt1": "إلغاء حظر المستخدم",
+      "BlockedChats_opt2": "أبلغ عن المستخدم",
+
+
+      "UserTerms": "شروط الاستخدام",
+      "UserTerm_terms": "",
+
+
+      "AboutPennytots": "حول Pennytots",
+      "AboutPennytots_aboutText":
+       "Pennytot is the corporate social responsibility (CSR) application of Laten Geuberen Limited, Canada: [Link to Company website]. It is dedicated to people going through tough times and by people who care enough to provide support through hugs, kind words and recommendations. Pennytots is promoted in dofferent countries by popular online influencers who are known for their humanitarian activities such as donations to charities, individuals in need, to promote pennytots in reaching more people, or to build its capabilities for users. If you wish to be part of our mission, please reach out to us here: [Help Desk Link]. If you want to make a donationn you may do so here [Donation link] ",
+       
+
+    
+       "Credits_Title": "الاعتمادات",
+       "Credits_balance": "رصيد Pennytots الحالي الخاص بي",
+       "Credits_purchase": "شراء بعض Pennytots",
+       "Credits_free": "Pennytots المجانية",
+       "Credits_History": "سجل الشراء",
+       "Credits_purchasePennytots": "شراء Pennytots",
+       "Credits_purchaseText":"يمكنك إجراء عملية شراء بحد أدنى 2000 Pennytots",
+       "Credits_proceedBtn": "اكملى",
+
+       "Alerts": ""
+      
+
+
+
+
+
+
+
+  }
+  

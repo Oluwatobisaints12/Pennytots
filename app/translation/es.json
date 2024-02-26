@@ -1,0 +1,265 @@
+{
+
+    "LoginPage_loginText": "Accede a tu cuenta",
+    "LoginPage_PhoneNumber": "Número de teléfono",
+    "LoginPage_pin": "Pin",
+    "LoginPage_loginBtn": "Iniciar sesión",
+    "LoginPage_signUp": "Regístrate",
+    "LoginPage_forgotPin": "Olvidaste la contraseña",
+    "LoginPage_reportIssue": "Haga clic aquí para informar un problema con su cuenta",
+
+
+    "ForgotPin_openingTaxt": "Se te olvidó tu contraseña?",
+    "ForgotPin_recoveryEmail": "Email de recuperación",
+    "ForgotPin_btn": "Reajustar",
+    "ForgotPin_signUp": "Regístrate",
+    "ForgotPin_login": "Olvidaste la contraseña",
+
+
+    "Signup_loginbtn": "Iniciar sesión",
+    "Signup_forgotPin_btn": "Se te olvidó tu contraseña",
+    "Signup_nextbtn": "Próximo",
+    "Signup_Do_Laterbtn": "Haz esto más tarde",
+
+    "Signup_OpeningText": "Información personal",
+    "Signup_page1text": "Crea tu cuenta con tu número de teléfono y email",
+    "Signup_phoneNumber": "número de teléfono",
+    "Signup_firstName": "Primer nombre",
+    "Signup_lastName": "Apellido",
+    "Signup_email": "E-mail",
+    "Signup_pin": "Pin",
+
+    "Signup_tellUsMore": "Cuéntanos más sobre ti",
+    "Signup_page2text": "Danos algunos detalles más sobre ti",
+    "Signup_age": "Años",
+    "Signup_SelectAge": "Seleccionar rango de edad",
+    "Signup_gender": "Género",
+    "Signup_selectGender": "Seleccione género",
+    "Signup_town": "Pueblo / Ciudad",
+    "Signup_State": "Estado / Provincia",
+    "Images": "Imagen",
+    "Signup_beFound": "¡Sé encontrado por otros!",
+    "Signup_page3text": "Ayude a otros a encontrarle proporcionando más información",
+    "Signup_aboutMe": "Acerca de mí",
+    "Signup_facebook": "Enlace de perfil de Facebook",
+    "Signup_linkedin": "Enlace de perfil de Linkedin",
+    "Signup_website": "Sitio web personal",
+
+    "Signup_beProfessional": "Se profesional",
+    "Signup_page4text": "Cuéntanos sobre tu lugar de trabajo y a qué te dedicas.",
+    "Signup_placeOfWork": "Lugar de trabajo",
+    "Signup_jobTitle": "Título profesional",
+
+    "Signup_areas_of_interest": "Intereses",
+    "Signup_page5text": "Recibe publicaciones personalizadas para ti",
+    "Intrest_Bu": "Negocio",
+    "Interest_Lau": "Risa",
+    "Interest_Flir": "Galanteo",
+    "Interest_Fun": "Divertido",
+    "Signup_allDone_btn": "Terminado",
+
+
+    "Convos": "Conversaciones",
+    "Topics_muteTopic": "Tema mudo",
+    "Topics_flag": "Marcar como inapropiado",
+    "Topics_FollowBtn" : "Follow",
+    "Topic_EditTopic": "Edit Topic",
+    "Topic_Comments" : "Comments",
+    "Topic_Likes": "Likes",
+    "convos_SubMenu" : "Remove from convos",
+    
+
+    "BottomNav_topic": "Temas",
+    "BottomNav_groups": "Grupos",
+    "BottomNav_chats": "Charlas",
+    "BottomNav_search": "Busca",
+
+
+    "SideNav_profile": "Perfil",
+    "SideNav_postTopic": "Publicar un Tema",
+    "SideNav_createGroup": "Crear un grupo",
+    "SideNav_settings": "Ajustes",
+    "SideNav_Credit": "Créditos",
+    "SideNav_helpDesk": "Mesa de ayuda",
+    "SideNav_logout": "Finalizar la sesión",
+
+
+    "PostTopic_title": "Publicar un Tema",
+    "PostTopic_typeMessage": "Escriba un mensaje",
+    "PostTopic_attachFile": "Adjuntar archivo",
+    "PostTopic_camera": "Cámara",
+    "PostTopic_gallery": "Galería",
+    "PostTopic_audio": "Audio",
+    "PostTopic_video": "Video",
+    "PostTopic_document": "Documento",
+    "PostTopic_relatedTopics": "Seleccionar etiquetas relacionadas con este tema",
+    "PostTopic_postbtn": "Cuota",
+    "PostTopic_prevbtn": "Preview",
+    "PostTopic_alert": "El número máximo de selecciones es 3",
+
+
+    "comments_title": " Comentarios",
+    "comments_timestamp": "days ago",
+    "comments_share": "Cuota",
+    "comments_likes": "Likes",
+    "comments_comments": "Comentarios",
+    "comments_typeMessage": "Escriba un mensaje",
+
+
+    "Search_searchText": "Buscar por palabra clave",
+    "Search_filter": "Filtrar",
+    "Search_users": "Usuarios",
+    "Search_chats": "Charlas",
+    "Search_groups": "Grupos",
+    "Search_topics": "Temas",
+    "Search_comments": "Comentarios",
+    "Search_subComments": "Subcomentarios",
+
+    "Chats_viewProfile": "Ver perfil",
+    "Chats_blockUser": "Bloquear usuario",
+    "Chats_reportUser": "Reportar usuario",
+    "Chats_closeChat": "Cerrar chat",
+    "Chats_message": "Mensaje",
+    "Chats_att_camera": "Cámara",
+    "Chats_att_images": "Imágenes",
+    "Chats_att_audio": "Audio",
+    "Chats_att_contact": "Contacto",
+    "Chats_att_document": "Documento",
+
+
+    "Groups_": "Mis grupos",
+    "Groups_joinGroups": "Unirse al grupo",
+    "Groups_members": "Miembros",
+    "Groups_TaptoJoin": "Tap to Join",
+    "Groups_SearchGroup" : "Search Group",
+
+    "MyGroupsPage_opt_reportGroup": "Grupo de informes",      
+    "MyGroups_opt_muteGroup": "Grupo mudo",
+    "MyGroups_opt_leaveGroup": "Abandonar el grupo",
+
+    "Groups_opt_groupInfo": "información del grupo",
+    "Groups_opt_reportGroup": "Grupo de informes",
+    "Groups_opt_exitGroup": "Salir del grupo",
+
+    "GroupDesc_description": "Descripción",
+    "GroupDesc_join": "Unirse",
+    "GroupDesc_joined": "unido",
+    "GroupDesc_members": "Miembros",
+    "GroupDesc_creator": "Creador",
+    "GroupDesc_exit": "Salir del grupo",
+
+    "ReportGroup_text": "Descripción",
+    "ReportGroup_message": "Escriba su mensaje aquí",
+    "ReportGroup_sendbtn": "enviar",
+
+    "CreateGroup_title": "crea un grupo",
+    "CreateGroup_groupName": "Nombre del grupo",
+    "CreateGroup_Description": "Descripción del Grupo",
+    "CreateGroup_tags": "seleccionar etiquetas relevantes para este grupo",
+    "CreateGroup_button": "crea un grupo",
+
+
+    "profile_bio": "Acerca de mí",
+    "profile_website": "Sitio web",
+    "profile_facebook": "Facebook",
+    "profile_linkedIn": "Linkedin",
+    "profile_company": "Empresa",
+    "profile_position": "Posición de la compañía",
+    "profile_genderM": "Masculino",
+    "profile_genderF": "Femenina",
+    "profile_message": "Mensaje",
+    "profile_topics": "Temas",
+    "profile_groups": "Groupos",
+
+    "PersonalProfile_edit": "Editar perfil",
+
+    "EditProfile_Bio" : "Bio",
+    "EditProfile_SelectAge": "Please select Age Range",
+    "EditProfile_genderM": "Male",
+    "EditProfile_genderF": "Female",
+    "EditProfile_SelectGender": "please select a gender",
+    "EditProfile_town": "Town / City",
+    "EditProfile_State": "State / Province",
+    "EditProfile_Placeholder_website": "Set Website",
+    "EditProfile_Placeholder_facebook": "Set Facebook Profile link",
+    "EditProfile_Placeholder_linkedIn": "Set Linkedin Profile link",
+    "EditProfile_Placeholder_company": "Set Company",
+    "EditProfile_Placeholder_position": "Set Position",
+    "EditProfile_Btn": "Update",
+
+    "HelpDesk_": "Mesa de ayuda",
+    "HelpDesk_compose": "Componer",
+    "HelpDesk_reply": "Respuesta",
+    "HelpDesk_helpText": "Dinos como podemos ayudar",
+    "HelpDesk_category": "categoría",
+    "HelpDesk_categroryDrop": "Seleccione una categoría",
+    "Helpdesk_category_GI" : "General Inquiry",
+    "Helpdesk_category_AC" : "App Crash",
+    "Helpdesk_category_FR" : "Feature Request",
+    "Helpdesk_category_S" : "Suggestions",
+    "Helpdesk_category_PI" : "Payment Issues",
+    "Helpdesk_category_O" : "Others",
+    "HelpDesk_messageTitle": "Título",
+    "HelpDesk_details": "Todos los detalles",
+    "HelpDesk_messageBox": "Escriba su mensaje aquí",
+    "HelpDesk_sendBtn": "Enviar",
+    "HelpDesk_feedback1": "Mensaje enviado",
+    "HelpDesk_feedback2": "Nos pondremos en contacto con usted pronto",
+
+
+    "Settings_editprofile": "Editar perfil",
+    "Settings_preferences": "preferencias",
+    "Settings_interest": "Áreas de interés",
+    "Settings_language": "Cambiar idioma",
+    "Settings_account": "Cuenta",
+    "Settings_pin": "Cambia la contraseña",
+    "Settings_blockedChats": "Chats bloqueados",
+    "Settings_help": "Ayudar",
+    "Settings_userTerms": "Condiciones de uso",
+    "Settings_About": "Acerca de Pennytots",
+
+
+    "AreasOfInterest_": "Áreas de interés",
+    "AreasOfInterest_text": "Selecciona los temas que te interesan",
+    "AreasOfInterest_button": "Hecho",
+
+
+    "Language": "Cambiar idioma",
+    "Language_TitleText": "Elige tu idioma preferido",
+    "Language_dropDown": "Por favor, seleccione un idioma",
+    "Language_button": "Elige lengua",
+
+
+    "ChangePin_title": "cambiar PIN",   
+    "ChangePin_currentPin": "PIN actual",
+    "ChangePin_currrentPinPlaceholder": "ingrese el pin actual",
+    "ChangePin_newPin": "Pin nuevo",
+    "ChangePin_newPinPlaceholder": "Introduce un nuevo PIN",
+    "ChangePin_button": "guardar",
+
+
+    "BlockedChats": "Chats bloqueados",
+    "BlockedChats_opt1": "Desbloquear usuario",
+    "BlockedChats_opt2": "Reportar usuario",
+
+
+    "UserTerms": "Términos de usuario",
+    "UserTerm_terms": "",
+
+
+    "AboutPennytots": "Acerca de Pennytots",
+    "AboutPennytots_aboutText":
+     "Pennytot es la aplicación de responsabilidad social corporativa (RSC) de Laten Geuberen Limited, Canadá: [Enlace al sitio web de la empresa]. Está dedicado a las personas que atraviesan momentos difíciles y por personas que se preocupan lo suficiente como para brindar apoyo a través de abrazos, palabras amables y recomendaciones. Pennytots es promocionado en diferentes países por personas influyentes populares en línea que son conocidas por sus actividades humanitarias, como donaciones a organizaciones benéficas, personas necesitadas, para promover que Pennytots llegue a más personas o para desarrollar sus capacidades para los usuarios. Si desea ser parte de nuestra misión, comuníquese con nosotros aquí: [Help Desk Link]. Si desea hacer una donación, puede hacerlo aquí [Donation Link]",
+     
+
+     "Credits_Title": "Créditos",
+     "Credits_balance": "Mi saldo actual de Pennytots",
+     "Credits_purchase": "Comprar",
+     "Credits_free": "Pennytots gratis",
+     "Credits_History": "Historial de compras",
+     "Credits_purchasePennytots": "Comprar Pennytots",
+     "Credits_purchaseText":"Puedes realizar una compra mínima de 2000 Pennytots",
+     "Credits_proceedBtn": "Proceder",
+
+     "Alerts": ""
+}
