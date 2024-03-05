@@ -2,7 +2,6 @@ import { View, Text, TouchableOpacity,Image } from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import React from 'react';
 import { FileHelper } from 'app/helpers';
-// import FastImage from 'react-native-fast-image';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,

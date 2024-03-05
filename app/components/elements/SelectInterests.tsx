@@ -106,7 +106,7 @@ const SelectInterests: FunctionComponent<SelectInterestsProps> = ({
           justifyContent: 'center',
           margin: 3,
           marginRight: 4,
-          opacity: isClickable ? 1 : 0.5,
+          opacity: 1,
         }}
       >
         <CustomText
@@ -132,7 +132,7 @@ const SelectInterests: FunctionComponent<SelectInterestsProps> = ({
             paddingVertical: 10,
           }}
         >
-          {allInterests.slice(0, 4).map((item: IInterest, index) =>
+          {allInterests.slice(0, 6).map((item: IInterest, index) =>
             index % 2 === 0 ? (
               <View
                 key={item._id}

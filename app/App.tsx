@@ -1,3 +1,4 @@
+import {registerRootComponent} from 'expo'
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
@@ -70,7 +71,7 @@ Notifications.setNotificationHandler({
   }),
 });
 
-export default function App() {
+function App() {
   const [IsReady, SetIsReady] = useState(false);
   useEffect(() => {
     const registerForPushNotificationsAsync = async () => {
@@ -207,3 +208,5 @@ export default function App() {
     </PersistQueryClientProvider>
   );
 }
+
+export default registerRootComponent(App);

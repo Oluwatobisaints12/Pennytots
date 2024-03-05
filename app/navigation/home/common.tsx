@@ -15,13 +15,13 @@ import TestScreen from 'app/screens/common/testing';
 import ChallengeMode from 'app/screens/bottom/challengeMode';
 import GameMode from 'app/screens/bottom/gameMode';
 
-
 // All Screen that can be access anywhere in the app is listed here...
 const CommonStack = createNativeStackNavigator();
 
 function CommonStackNavigator() {
   return (
     <CommonStack.Navigator screenOptions={{ headerShown: false }}>
+      
       <CommonStack.Screen name='private-chat' component={PrivateChat} />
       <CommonStack.Screen name='group-chat' component={GroupChat} />
       <CommonStack.Screen name='group-info' component={GroupInfo} />
@@ -30,9 +30,6 @@ function CommonStackNavigator() {
       <CommonStack.Screen name='fullscreen-image' component={FullScreenImage} />
       <CommonStack.Screen name='gameMode' component={GameMode} />
       <CommonStack.Screen name='ChallengeMode' component={ChallengeMode} />
-
-
-
       {/* <CommonStack.Screen
         name='preview-attachment'
         component={PreviewAttachment}

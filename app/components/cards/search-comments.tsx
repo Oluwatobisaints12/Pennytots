@@ -16,7 +16,6 @@ import {
 } from 'react-native-popup-menu';
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import FastImage from "react-native-fast-image";
 import Document from '../attachments/Document';
 import Audio from '../attachments/Audio';
 import Video from 'app/components/attachments/Video';

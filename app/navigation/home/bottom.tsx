@@ -18,8 +18,6 @@ import { useTranslation } from 'react-i18next';
 import ChallengeMode from 'app/screens/bottom/challengeMode';
 import { Ionicons } from '@expo/vector-icons';
 import GameMode from 'app/screens/bottom/gameMode';
-
-
 // import { SafeAreaView } from 'react-native-safe-area-context';
 
 const BottomTab = createBottomTabNavigator();
@@ -44,7 +42,6 @@ const HomeNavigationDrawerStructure = (props: any) => {
     </SafeAreaView>
   );
 };
-
 
 function BottomTabNavigator() {
   const { t } = useTranslation();``
@@ -199,21 +196,16 @@ function BottomTabNavigator() {
         }}
         component={Group}
       />
-     <BottomTab.Screen
-  name={'QuizScreen'}
-  component={Quiz}
-  
-  options={{
-    tabBarLabel: "Quiz",
-    tabBarIcon: () => <SVG name='quiz' size={20} />,
-    title: 'Quiz',
-    headerShown: false
-  }}
-
-  
-/>
-
-
+      <BottomTab.Screen
+        name={'QuizScreen'}
+        options={{
+          tabBarLabel: "Quiz",
+          tabBarIcon: () => <SVG name='quiz' size={20} />,
+          title: 'Quiz',
+          headerShown: false
+        }}
+        component={Quiz}
+      />
 
       <BottomTab.Screen
         name={'ChatsScreen'}
@@ -244,88 +236,54 @@ function BottomTabNavigator() {
 export function BottomTabStack({ navigation }: any) {
   return (
     <Stack.Navigator>
-    <Stack.Screen
-      options={{
-        headerTitle: () => (
-          <Image
-            source={require('app/assets/logohorizontal.png')}
-            style={{ width: 120, height: 48, margin: 2 }}
-          />
-        ),
-        headerShown: true,
-        headerTitleAlign: 'center',
-        headerLeft: () => (
-          <HomeNavigationDrawerStructure navigationProps={navigation} />
-        ),
-        headerRight: () => (
-          <SafeAreaView
-            style={{
-              paddingRight: 15,
-            }}
-          >
-            <ConvoNotification navigation={navigation} />
-          </SafeAreaView>
-        ),
-        headerStyle: { backgroundColor: '#fff' },
-        headerShadowVisible: false,
-      }}
-      name='home-landing'
-      component={BottomTabNavigator}
-    />
-
-    <Stack.Screen
-      options={{
-        headerShown: false,
-      }}
-      name='convos'
-      component={Convo}
-    />
-
-<Stack.Screen
-    
-      name='ChallengeMode'
-      component={ChallengeMode}
-    />
-    
-<Stack.Screen
-    
-    name='GameMode'
-    component={GameMode}
-  />
-  {/* <Stack.Screen
-  options={{
-    headerTitle: () => (
-      <Image
-        source={require('app/assets/logohorizontal.png')}
-        style={{ width: 120, height: 48, margin: 2 }}
-      />
-    ),
-    headerShown: true,
-    headerTitleAlign: 'center',
-    headerLeft: () => (
-      <HomeNavigationDrawerStructure navigationProps={navigation} />
-    ),
-    headerRight: () => (
-      <SafeAreaView
-        style={{
-          paddingRight: 15,
+      <Stack.Screen
+        options={{
+          headerTitle: () => (
+            <Image
+              source={require('app/assets/logohorizontal.png')}
+              style={{ width: 120, height: 48, margin: 2 }}
+            />
+          ),
+          headerShown: true,
+          headerTitleAlign: 'center',
+          headerLeft: () => (
+            <HomeNavigationDrawerStructure navigationProps={navigation} />
+          ),
+          headerRight: () => (
+            <SafeAreaView
+              style={{
+                paddingRight: 15,
+              }}
+            >
+              <ConvoNotification navigation={navigation} />
+            </SafeAreaView>
+          ),
+          headerStyle: { backgroundColor:'#fff'},
+          headerShadowVisible: false,
         }}
-      >
-        <ConvoNotification navigation={navigation} />
-      </SafeAreaView>
-    ),
-    headerStyle: { backgroundColor: '#fff' },
-    headerShadowVisible: false,
-  }}
-  name='Quiz'
-  component={Quiz}
-/> */}
+        name='home-landing'
+        component={BottomTabNavigator}
+      />
 
+      <Stack.Screen
+        options={{
 
-
-
- 
-  </Stack.Navigator>
+          headerShown: false,
+        }}
+        name='convos'
+        component={Convo}
+      />
+      <Stack.Screen
+    
+    name='ChallengeMode'
+    component={ChallengeMode}
+  />
   
+<Stack.Screen
+  
+  name='GameMode'
+  component={GameMode}
+/>
+    </Stack.Navigator>
   );
 }

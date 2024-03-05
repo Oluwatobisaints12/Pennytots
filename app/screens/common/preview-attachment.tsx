@@ -24,7 +24,6 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import PreviewAudio from 'app/components/media/preview-audio';
 import PreviewVideo from 'app/components/media/preview-video';
 import { ContactHelper } from 'app/helpers';
-import FastImage from 'react-native-fast-image';
 import { Axios } from 'app/api/axios';
 import { useSelector } from 'react-redux';
 import { userId } from 'app/redux/user/reducer';

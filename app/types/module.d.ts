@@ -1,4 +1,3 @@
-declare module 'react-native-fast-image';
 declare module 'react-native-svg-flagkit';
 declare module 'react-native-segmented-control-tab';
 declare module 'react-native-popup-menu';
@@ -16,5 +15,4 @@ declare module '*.svg' {
   import { SvgProps } from 'react-native-svg';
   const content: React.FC<SvgProps>;
   export default content;
-
 }

@@ -108,7 +108,6 @@ export default function DrawerNavigator() {
         }}
         component={CreateGroup}
       />
-     
 
       <Drawer.Screen
         name='Settings'

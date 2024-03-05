@@ -43,7 +43,6 @@ import useMyChat from 'app/redux/chat/hooks';
 import { FileSelectHelper } from '../../helpers/FileSelectHelper';
 import { CameraHelper, FileHelper } from 'app/helpers';
 import SelectContact from 'app/components/SelectContact';
-import FastImage from 'react-native-fast-image';
 import GallerySVG from 'app/assets/svg/media/gallery2.svg';
 import GallerySVG2 from 'app/assets/svg/media/gallery3.svg';
 import CameraSVG from 'app/assets/svg/media/camera.svg';

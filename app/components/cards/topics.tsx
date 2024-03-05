@@ -3,7 +3,6 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import { Image } from 'expo-image';
-// import FastImage from 'react-native-fast-image';
 import {
   Menu,
   MenuOptions,

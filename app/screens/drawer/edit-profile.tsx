@@ -7,9 +7,7 @@ import {
   ImageBackground,
   TouchableOpacity,
   SafeAreaView,
-  KeyboardAvoidingView,
 } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,

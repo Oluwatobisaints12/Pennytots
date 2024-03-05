@@ -9,7 +9,6 @@ import {
 } from 'react-native';
 import { CustomText } from './Text';
 import Ionicons from '@expo/vector-icons/Ionicons';
-// import FastImage from 'react-native-fast-image';
 
 type CustomButtonProps = {
   style?: TextStyle | TextStyle[];

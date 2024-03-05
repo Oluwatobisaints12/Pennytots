@@ -10,9 +10,9 @@ const OnboardingStack = createNativeStackNavigator();
 function OnboardingNavigator() {
   return (
     <OnboardingStack.Navigator screenOptions={{ headerShown: false }}>
-      <OnboardingStack.Screen name='welcome' component={Welcome} />
+      {/* <OnboardingStack.Screen name='welcome' component={Welcome} />
       <OnboardingStack.Screen name='personal' component={Personal} />
-      <OnboardingStack.Screen name='company' component={Company} />
+      <OnboardingStack.Screen name='company' component={Company} /> */}
       <OnboardingStack.Screen name='area-of-interest' component={AreaOfInterests} />
     </OnboardingStack.Navigator>
   );

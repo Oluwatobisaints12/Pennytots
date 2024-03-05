@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react'
-// import FastImage from 'react-native-fast-image';
 import { Image } from 'react-native';
 
 

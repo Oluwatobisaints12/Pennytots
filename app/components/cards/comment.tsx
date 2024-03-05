@@ -20,7 +20,7 @@ import {
     heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import { default as themeFont } from 'app/assets/themes/fonts.json';
-import FastImage from 'react-native-fast-image';
+import { Image } from 'expo-image';
 import Document from '../attachments/Document';
 import Audio from '../attachments/Audio';
 import Video from '../attachments/Video';
@@ -307,20 +307,20 @@ const CommentCard = ({ item, refreshFunction = () => { }, navigation,
                             })
                         }
                     >
-                        <FastImage
-                            source={{
-                                uri: item.image
-                            }}
-                            style={{
-                                height: hp('30%'),
-                                borderRadius: wp('2%'),
-                                borderColor: 'white',
-                                borderWidth: wp('0.6%'),
-                                flex: 1,
-                                flexDirection: 'column',
-                            }}
-                            resizeMode={FastImage.resizeMode.cover}
-                        />
+                    <Image
+                        source={{
+                            uri: item.image
+                        }}
+                        style={{
+                            height: hp('30%'),
+                            borderRadius: wp('2%'),
+                            borderColor: 'white',
+                            borderWidth: wp('0.6%'),
+                            flex: 1,
+                            flexDirection: 'column',
+                        }}
+                        resizeMode='cover'
+                    />                    
                     </TouchableOpacity>
                 ) : null}
                 {item.document ? (

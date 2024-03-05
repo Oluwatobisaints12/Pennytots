@@ -17,7 +17,6 @@ import Loader from 'app/components/elements/Loader';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import SelectAttachment from 'app/components/select-attachment';
 import ReportDialog from 'app/components/dialogs/report';
-// import FastImage from 'react-native-fast-image';
 import { default as themeFont } from 'app/assets/themes/fonts.json';
 import { CustomText } from 'app/components/elements';
 

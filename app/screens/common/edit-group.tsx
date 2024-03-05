@@ -1,7 +1,6 @@
 import { View, Text, ImageBackground } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import HeaderTitle from 'app/components/HeaderTitle';
-import FastImage from 'react-native-fast-image';
 import { TouchableOpacity } from 'react-native';
 import {
   widthPercentageToDP as wp,

@@ -14,7 +14,6 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import FastImage from 'react-native-fast-image';
 import { CustomText } from 'app/components/elements';
 import SegmentedControlTab from 'react-native-segmented-control-tab';
 import { TopicCard } from 'app/components/cards';

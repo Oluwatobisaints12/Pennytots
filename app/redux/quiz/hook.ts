@@ -5,11 +5,13 @@ import {queryClient} from "app/redux/user/hooks"
 
 
   export function useGetQuestions() {
-    const { data, isLoading, refetch } = useQuery(['quiz'], quiz.getQuestions, {
+    const { data, isLoading, refetch,isFetching } = useQuery(['quiz'], quiz.getQuestions, {
       cacheTime: 0, // Disable caching
+      refetchOnMount: false, // Do not refetch on mount
+      refetchOnWindowFocus: false, // Do not refetch on window focus
     });
   
-    return { data,isLoading, refetch };
+    return { data,isLoading, refetch,isFetching };
   }
 
   export function useChangeUserPennytots() {

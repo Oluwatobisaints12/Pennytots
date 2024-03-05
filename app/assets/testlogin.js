@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 
 // import AsyncStorage
-import AsyncStorage from '@react-native-community/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const App = () => {
   // To get the value from the TextInput
