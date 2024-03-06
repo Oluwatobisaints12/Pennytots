@@ -38,12 +38,6 @@ const Wrong15 = require('../../assets/gifs/wrong15.gif');
 const Wrong16 = require('../../assets/gifs/wrong16.gif');
 const Wrong17 = require('../../assets/gifs/wrong17.gif');
 const Right1 = require('../../assets/gifs/correct1.gif');
-const Right2 = require('../../assets/gifs/correct2.gif');
-const Right3 = require('../../assets/gifs/correct3.gif');
-const Right4 = require('../../assets/gifs/correct4.gif');
-const Right5 = require('../../assets/gifs/correct5.gif');
-const Right6 = require('../../assets/gifs/correct6.gif');
-const Right7 = require('../../assets/gifs/correct7.gif');
 
 
 const OptionButton = ({ 
@@ -183,7 +177,7 @@ const Quiz = () => {
     setIsCurrentSelectionCorrect(null);
   };
   const handleNavigateToChallengeMode = () => {
-    navigation.navigate('ChallengeMode');
+    navigation.navigate('ChallengeMode' as never);
 };
 
   return (

@@ -49,17 +49,16 @@ const OptionButton = ({
     <TouchableOpacity
       onPress={onPress}
       style={{
-        backgroundColor: isSelected ? "black" : "white",
-        height: 55,
+        backgroundColor: (isCorrect && isSelected) ? "#FFC085" : isSelected ? '#48463E' : '#FED830',
+        height: 64,
+        
         marginTop: 24,
-        marginBottom: 10,
-        borderRadius: 30,
+        marginBottom: 20,
+        borderRadius: 24,
         padding: 7,
         paddingHorizontal: 30,
-        borderWidth: 1,
-        borderColor: "black",
-        alignItems: "center",
-        justifyContent: "center",
+        alignItems: 'center',
+        justifyContent: 'center',
         margin: 3,
         marginRight: 4,
         opacity: isCorrect === null ? 1 : isSelected ? 1 : 0.5,
@@ -71,7 +70,8 @@ const OptionButton = ({
         style={{
           color: isSelected ? "white" : "black",
           textAlign: "center",
-          fontSize: 14,
+          fontSize: 13,
+          fontWeight: '600',
         }}
       >
         {option}
@@ -101,7 +101,7 @@ const GameMode = () => {
   const [image, setImage] = useState(null);
   const { question, options, answer: correctAnswer } = quizData || {};
   const [end, setEnd] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(30); // 30 seconds countdown
+  const [timeLeft, setTimeLeft] = useState(60); // 30 seconds countdown
   const [questionNumber, setQuestionNumber] = useState(1); // Initialize question number to 1
 
   useEffect(() => {

@@ -87,6 +87,7 @@ const styles = StyleSheet.create({
      borderRadius: 1.5,
     borderColor: 'none',
     backgroundColor: '#E8E8E8',
+    
     fontFamily: '', 
     fontSize: 14,
     fontWeight: '500'// Use Poppins font family for TextInput

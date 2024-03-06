@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   PermissionsAndroid,
   Platform,
-  SafeAreaView
+  SafeAreaView,
 } from 'react-native';
 
 import { Provider, Menu } from 'react-native-paper';
@@ -274,72 +274,33 @@ function PreviewAttachment({ navigation, route }: any) {
         ) 
         : attachment.type == 'contact' ? (
           <View style={{ flex: 1 }}>
-            {contacts ? (
-              <View
-                style={{
-                  flex: 1,
-                  marginTop: -40,
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                <FontAwesome
-                  name='address-book'
-                  size={100}
-                  style={{ marginRight: 5 }}
-                  color='grey'
-                />
-
-                <Text
-                  style={{
-                    paddingTop: 20,
-                    fontSize: 30,
-                    color: 'grey',
-                    fontWeight: 'bold',
-                  }}
-                >
-                  {contacts.displayName}
-                </Text>
-                {contacts.phoneNumbers.map((item: any) => (
-                  <View>
-                    <Text
-                      style={{
-                        fontSize: 20,
-                        color: 'grey',
-                      }}
-                    >
-                      {item.number}
-                    </Text>
-                  </View>
-                ))}
-                <View
-                  style={{
-                    marginTop: 14,
-                  }}
-                >
-                  <TouchableOpacity
-                    onPress={() => saveContact(contacts)}
-                    style={{
-                      backgroundColor: 'gold',
-                      padding: 18,
-                      paddingHorizontal: 25,
-                      borderRadius: 10,
-                    }}
-                  >
-                    <Text
-                      style={{
-                        fontWeight: 'bold',
-                        fontSize: 15,
-                      }}
-                    >
-                      Save Contact
-                    </Text>
-                  </TouchableOpacity>
+          {contacts ? (
+            <View style={{ flex: 1, marginTop: -40, flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+              <FontAwesome name='address-book' size={100} style={{ marginRight: 5 }} color='grey' />
+              <Text
+  style={{
+    paddingTop: 20,
+    fontSize: 30,
+    color: 'grey',
+    fontWeight: 'bold',
+  }}
+>
+  {contacts && contacts.displayName ? contacts.displayName : 'Unknown Contact'}
+</Text>
+              {contacts.phoneNumbers.map((item, index) => (
+                <View key={index}>
+                  <Text style={{ fontSize: 20, color: 'grey' }}>{item.number}</Text>
                 </View>
+              ))}
+              <View style={{ marginTop: 14 }}>
+                <TouchableOpacity onPress={() => saveContact(contacts)} style={{ backgroundColor: 'gold', padding: 18, paddingHorizontal: 25, borderRadius: 10 }}>
+                  <Text style={{ fontWeight: 'bold', fontSize: 15 }}>Save Contact</Text>
+                </TouchableOpacity>
               </View>
-            ) : null}
-          </View>
+            </View>
+          ) : null}
+        </View>
+        
         ) 
         : attachment.type == 'document' ? (
           <View
