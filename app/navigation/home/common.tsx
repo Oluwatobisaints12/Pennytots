@@ -29,7 +29,7 @@ function CommonStackNavigator() {
       <CommonStack.Screen name='testing' component={TestScreen} />
       <CommonStack.Screen name='fullscreen-image' component={FullScreenImage} />
       <CommonStack.Screen name='gameMode' component={GameMode} />
-      <CommonStack.Screen name='ChallengeMode' component={ChallengeMode} />
+      <CommonStack.Screen name='challengeMode' component={ChallengeMode} />
       {/* <CommonStack.Screen
         name='preview-attachment'
         component={PreviewAttachment}

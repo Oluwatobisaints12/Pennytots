@@ -17,7 +17,7 @@ import Animation from "app/components/animation";
 import { useGetQuestions, useChangeUserPennytots } from "app/redux/quiz/hook";
 import { navigate } from "app/navigation/root";
 import Quiz from "./quiz";
-const Correct = require("../../assets/gifs/correct.gif");
+const Correct = require("../../assets/gifs/correct1.gif");
 const Wrong1 = require("app/assets/times-up.png");
 
 
@@ -49,17 +49,16 @@ const OptionButton = ({
     <TouchableOpacity
       onPress={onPress}
       style={{
-        backgroundColor: isSelected ? "black" : "white",
-        height: 55,
+        backgroundColor: (isCorrect && isSelected) ? "#FFC085" : isSelected ? '#48463E' : '#FED830',
+        height: 64,
+        
         marginTop: 24,
-        marginBottom: 10,
-        borderRadius: 30,
+        marginBottom: 20,
+        borderRadius: 24,
         padding: 7,
         paddingHorizontal: 30,
-        borderWidth: 1,
-        borderColor: "black",
-        alignItems: "center",
-        justifyContent: "center",
+        alignItems: 'center',
+        justifyContent: 'center',
         margin: 3,
         marginRight: 4,
         opacity: isCorrect === null ? 1 : isSelected ? 1 : 0.5,
@@ -71,7 +70,8 @@ const OptionButton = ({
         style={{
           color: isSelected ? "white" : "black",
           textAlign: "center",
-          fontSize: 14,
+          fontSize: 13,
+          fontWeight: '600',
         }}
       >
         {option}
@@ -101,8 +101,14 @@ const GameMode = () => {
   const [image, setImage] = useState(null);
   const { question, options, answer: correctAnswer } = quizData || {};
   const [end, setEnd] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(30); // 30 seconds countdown
+  const [timeLeft, setTimeLeft] = useState(60); // 30 seconds countdown
   const [questionNumber, setQuestionNumber] = useState(1); // Initialize question number to 1
+
+  const handleNavigateToGameMode = () => {
+    // You can do some validation here before navigating
+    navigation.navigate('GameMode', { text: stake }); // Passing the 'text' parameter
+  };
+
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -219,7 +225,7 @@ const GameMode = () => {
 
 
       <View
-        style={{ flexDirection: "column", justifyContent: "space-between" }}
+        style={{ flexDirection: "column", justifyContent: "space-between",marginTop: rv(20) }}
       >
         <View
           style={{
@@ -228,9 +234,7 @@ const GameMode = () => {
             alignItems: "center",
           }}
         >
-          <TouchableOpacity
-            style={{ flexDirection: "row", alignItems: "center" }}
-          >
+          <TouchableOpacity onPress={handleNavigateToQuiz} style={{ flexDirection: "row", alignItems: "center" }}>
             <Image
               source={require("app/assets/Vector.png")}
               style={{ width: 24, height: 24, marginRight: 8 }}
@@ -242,13 +246,13 @@ const GameMode = () => {
             </Text>
           </TouchableOpacity>
           <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <Text style={{ fontWeight: "bold", fontFamily: 'extraBold' }}>{text}</Text>
-            <Text style={{ fontWeight: "bold" }}> Staked</Text>
+            <Text style={{ fontWeight: "bold", fontFamily: 'semiBold' ,color: '#4F4F4F'}}>{text}</Text>
+            <Text style={{ fontFamily: 'semiBold',color: '#4F4F4F'}}> Staked</Text>
           </View>
         </View>
         <View style={{ flexDirection: "column" }}>
           <View style={{flexDirection: 'row', justifyContent: 'space-between', marginTop: 32}}>
-            <Text style={{fontSize: 16, fontWeight: 'bold', lineHeight: 24}}>Questiion {questionNumber}</Text>
+            <Text style={{fontSize: 16, fontWeight: 'bold', lineHeight: 24}}>Question {questionNumber}</Text>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
             <Image
               source={require("app/assets/timesquare.png")}
@@ -257,15 +261,7 @@ const GameMode = () => {
               <Text style={{fontWeight: 'bold', fontSize: 16, color: '#797978'}}>{formatTimeLeft()}</Text>
             </View>
           </View>
-         <View style={{marginTop: 27}}>
-         {showScoreMessage && (
-            <Animatable.View animation="fadeIn">
-              <Text style={{ color: isCorrect ? "green" : "red" }}>
-                {isCorrect ? "+10" : "-10"}
-              </Text>
-            </Animatable.View>
-          )}
-         </View>
+         
         </View>
       </View>
       {isLoading && <Text>Loading...</Text>}
@@ -292,10 +288,10 @@ const GameMode = () => {
       {isCorrect && (
   <Animation image={image} end={end}/>
 )}
-      {timeLeft === 0 && (
-      <View style={{ alignItems: 'center', }}>
+      {timeLeft === 0 || isCurrentSelectionCorrect === false && (
+      <View style={{ alignItems: 'center', marginTop: 27 }}>
         <View style={styles.container}>
-          <Image source={Wrong1} style={styles.imageStyle} />
+          <Image source={Wrong1} style={styles.imageStyle} /> 
         </View>
         <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#797978', lineHeight: 36, marginTop: 27}}>CHALLENGE OVER!</Text>
         {/* Render a button to continue */}
@@ -311,38 +307,13 @@ const GameMode = () => {
             justifyContent: 'center', // center vertically
             alignItems: 'center' // center horizontally
           }}>
-            <Text style={{ fontWeight: '500', fontSize: 16, color: '#48463E', lineHeight: 24, fontFamily: 'extraBold', }}>Back to Game Mode</Text>
+            <Text style={{  fontSize: rv(14), color: '#48463E', lineHeight: 24, fontFamily: 'regular', }}>Back to Game Mode</Text>
           </View>
         </TouchableOpacity>
       </View>
     )}
 
-      {isCurrentSelectionCorrect === false && (
-  <View style={{ alignItems: 'center', marginTop: 27 }}>
-    {image && ( // Conditionally render the image only if it exists
-      <View style={styles.container}>
-        <Image source={image} style={styles.imageStyle} />
-      </View>
-    )}
-    <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#797978', lineHeight: 36, marginTop: 27, fontFamily: 'extraBold',}}>CHALLENGE OVER!</Text>
-    {/* Render a button to continue */}
-    <TouchableOpacity onPress={handleNavigateToQuiz} style={{ marginTop: 39 }}>
-      <View style={{
-        padding: 10,
-        backgroundColor: '#FED830',
-        borderRadius: 32,
-        width: 364,
-        height: 48,
-        paddingVertical: 12, // padding vertical
-        paddingHorizontal: 8, // padding horizontal
-        justifyContent: 'center', // center vertically
-        alignItems: 'center' // center horizontally
-      }}>
-        <Text style={{ fontWeight: '500', fontSize: 16, color: '#48463E', lineHeight: 24 }}>Back to Game Mode</Text>
-      </View>
-    </TouchableOpacity>
-  </View>
-)}
+     
 
 {/* Remove the Animation component */}
 

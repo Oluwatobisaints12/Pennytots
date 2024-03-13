@@ -4,12 +4,11 @@ import { ShowAlert } from 'app/providers/toast';
 
 
 export const MAIN_URL: string =
-  // 'http://192.168.1.150:8000';
   'https://pennytot-backend-development.up.railway.app';
 
 export const Axios = axios.create({
   baseURL: MAIN_URL,
-  timeout: 10000, //10s api call before ending
+  timeout: 20000, //10s api call before ending
   headers: {},
 },);
 
@@ -28,7 +27,7 @@ Axios.interceptors.response.use(
   async (error) => {
     console.log(error, 'error from axios')
     if (error.response && error.response.data && error.response.data.message) {
-      ShowAlert({ type: 'error', message: error.response.data.message });
+      ShowAlert({ type: 'error', message: error?.response?.data?.message });
     } else {
       // Handle cases where error.response is undefined
       ShowAlert({ type: 'error', message: 'Network Error or Server Not Respondings' });

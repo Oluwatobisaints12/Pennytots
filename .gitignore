@@ -17,3 +17,5 @@ web-build/
 .metro-health-check*
 
 *.env
+*.keystore
+pennytots-180b0fd766c4.json

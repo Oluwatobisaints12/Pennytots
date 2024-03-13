@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Image } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+import { responsiveValue as rv } from 'app/providers/responsive-value';
 
 const Animation = ({ image, end }: any) => {
 
@@ -14,7 +15,7 @@ const Animation = ({ image, end }: any) => {
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Animatable.Image
         source={image}
-        style={{ width: 250, height: 250 }}
+        style={{ width: rv(200), height: rv(200) }}
         animation={'fadeIn'}
       />
     </View>

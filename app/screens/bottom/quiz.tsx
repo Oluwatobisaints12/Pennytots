@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, Button, TouchableOpacity, Image } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import { NavigationProp } from '@react-navigation/native';
 import axios from 'axios';
 import * as Animatable from 'react-native-animatable';
 import { useMutation, useQuery } from '@tanstack/react-query';
@@ -14,11 +12,9 @@ import FloatingAddSVG from 'app/assets/svg/next.svg';
 import { responsiveValue as rv } from 'app/providers/responsive-value';
 import Animation from 'app/components/animation';
 import { useGetQuestions, useChangeUserPennytots } from 'app/redux/quiz/hook';
-import { navigate } from 'app/navigation/root';
+import { useNavigation } from '@react-navigation/native';
 
-import ChallengeMode from './challengeMode';
 
-const Correct = require('../../assets/gifs/correct.gif');
 const Loading = require('../../assets/loading.gif');
 const Wrong1 = require('../../assets/gifs/wrong1.gif');
 const Wrong2 = require('../../assets/gifs/wrong2.gif');
@@ -38,12 +34,8 @@ const Wrong15 = require('../../assets/gifs/wrong15.gif');
 const Wrong16 = require('../../assets/gifs/wrong16.gif');
 const Wrong17 = require('../../assets/gifs/wrong17.gif');
 const Right1 = require('../../assets/gifs/correct1.gif');
-const Right2 = require('../../assets/gifs/correct2.gif');
-const Right3 = require('../../assets/gifs/correct3.gif');
-const Right4 = require('../../assets/gifs/correct4.gif');
-const Right5 = require('../../assets/gifs/correct5.gif');
-const Right6 = require('../../assets/gifs/correct6.gif');
-const Right7 = require('../../assets/gifs/correct7.gif');
+
+
 
 
 const OptionButton = ({ 
@@ -60,16 +52,16 @@ const OptionButton = ({
       onPress={onPress}
       style={{
         backgroundColor: (isCorrect && isSelected) ? "#FFC085" : isSelected ? '#48463E' : '#FED830',
-        height: 64,
-        marginTop: 1,
-        marginBottom: 20,
-        borderRadius: 24,
-        padding: 7,
-        paddingHorizontal: 30,
+        height: rv(54),
+        marginTop: rv(0.5),
+        marginBottom: rv(20),
+        borderRadius: rv(24),
+        padding: rv(7),
+        paddingHorizontal: rv(30),
         alignItems: 'center',
         justifyContent: 'center',
-        margin: 3,
-        marginRight: 4,
+        margin: rv(3),
+        marginRight: rv(4),
         opacity: isCorrect === null && canClick ? 1 : isSelected ? 1 : 0.5,
         ...style,
       }}
@@ -79,7 +71,7 @@ const OptionButton = ({
         style={{
           color: (isCorrect && isSelected) ? "#48463E" : isSelected ? 'white' : '#48463E',
           textAlign: 'center',
-          fontSize: 13,
+          fontSize: rv(11),
           fontWeight: '600',
         }}
       >
@@ -167,11 +159,10 @@ const Quiz = () => {
       setIsCurrentSelectionCorrect(true);
     }
   };
-  const handleImageError = (error: any) => {
-    console.error('Error loading image:', error);
-    // Handle the error, such as displaying a placeholder image or showing an error message
-  };
 
+  const refresh = () => {
+
+  }
 
   const handleNextQuestion = () => {
     setGoToNext(false);
@@ -182,13 +173,14 @@ const Quiz = () => {
     setIsCorrect(null);
     setIsCurrentSelectionCorrect(null);
   };
+
   const handleNavigateToChallengeMode = () => {
-    navigation.navigate('ChallengeMode');
+    navigation.navigate('ChallengeMode' as never);
 };
 
   return (
     <SafeAreaView
-      style={{ flex: 1, backgroundColor: 'white', paddingHorizontal: 20 }}
+      style={{ flex: 1, backgroundColor: 'white', paddingHorizontal: rv(20) }}
     >
       <View
         style={{
@@ -201,9 +193,9 @@ const Quiz = () => {
         <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center'}} onPress={handleNavigateToChallengeMode}>
           <Image
             source={require('app/assets/Bulb.png')}
-            style={{ width: 17.28, height: 24 }}
+            style={{ width: rv(16), height: rv(22) }}
           />
-          <Text style={{ fontSize: 15, fontWeight: '600', color: '#4F4F4F',paddingLeft:6 }}>
+          <Text style={{ fontSize: rv(13), fontWeight: '600', color: '#4F4F4F',paddingLeft:rv(4) }}>
             Challenge Mode
           </Text>
           </TouchableOpacity>
@@ -213,23 +205,23 @@ const Quiz = () => {
           <View style={{ flexDirection: 'row' }}>
             <Text
               style={{
-                paddingRight: 5,
-                fontSize: 15,
+                paddingRight: rv(4),
+                fontSize: rv(13),
                 fontWeight: '600',
                 color: '#696969',
               }}
             >
               {credits?.amount}
             </Text>
-            <Text style={{ fontSize: 15, fontWeight: '600', color: '#696969' }}>
+            <Text style={{ fontSize: rv(13), fontWeight: '600', color: '#696969' }}>
               Pennytots
             </Text>
           </View>
-          <View style={{ flexDirection: 'row', position: 'absolute', top: 25 }}>
-            <Animatable.View animation='fadeIn' style={{ width: 30 }}>
+          <View style={{ flexDirection: 'row', position: 'absolute', top: rv(22) }}>
+            <Animatable.View animation='fadeIn' style={{ width: rv(25) }}>
               {showScoreMessage && (
                 <Text style={{ color: isCorrect ? 'green' : 'red' }}>
-                  {isCorrect ? '+25' : '-25'}
+                  {isCorrect ? '+50' : '-50'}
                 </Text>
               )}
             </Animatable.View>
@@ -249,12 +241,13 @@ const Quiz = () => {
           <Text
             style={{
               marginTop: 40,
-              fontSize: 14,
-              fontWeight: 600,
+              fontSize: rv(12),
+              fontWeight: '700',
+              fontStyle: 'normal',
               color: '#696969',
             }}
           >
-            {quizData.question}
+            {quizData?.question}
           </Text>
           <View
             style={{
@@ -282,7 +275,7 @@ const Quiz = () => {
 
       {goToNext && (
         <TouchableOpacity
-          style={{ position: 'absolute', bottom: 20, right: 20 }}
+          style={{ position: 'absolute', bottom: rv(20), right: rv(20) }}
           onPress={handleNextQuestion}
         >
           {/* Add your arrow icon here */}

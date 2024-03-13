@@ -16,8 +16,8 @@ import Convo from 'app/screens/bottom/convo';
 import ChatSVG from 'app/assets/svg/chat.svg';
 import { useTranslation } from 'react-i18next';
 import ChallengeMode from 'app/screens/bottom/challengeMode';
-import { Ionicons } from '@expo/vector-icons';
 import GameMode from 'app/screens/bottom/gameMode';
+
 // import { SafeAreaView } from 'react-native-safe-area-context';
 
 const BottomTab = createBottomTabNavigator();
@@ -36,7 +36,7 @@ const HomeNavigationDrawerStructure = (props: any) => {
             marginHorizontal: 10,
           }}
         >
-          <FontAwesome name="bars" size={30} color='black' />
+          <FontAwesome name='bars' size={30} color='black' />
         </View>
       </TouchableOpacity>
     </SafeAreaView>
@@ -44,15 +44,15 @@ const HomeNavigationDrawerStructure = (props: any) => {
 };
 
 function BottomTabNavigator() {
-  const { t } = useTranslation();``
+  const { t } = useTranslation();
+  ``;
   function MyTabBar({ state, descriptors, navigation }) {
     return (
       <View
-      style ={{
-        backgroundColor: 'black',
-        paddingTop: 20
-
-      }}
+        style={{
+          backgroundColor: 'black',
+          paddingTop: 20,
+        }}
       >
         <SafeAreaView
           style={{
@@ -126,7 +126,7 @@ function BottomTabNavigator() {
                         flexDirection: 'column',
                         backgroundColor: '#2e2e2e',
                         paddingVertical: 15,
-                        
+
                         borderRadius: 15,
                         alignItems: 'center',
                         width: '100%',
@@ -179,7 +179,7 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name={'TopicScreen'}
         options={{
-          tabBarLabel: t("BottomNav_topic"),
+          tabBarLabel: t('BottomNav_topic'),
           tabBarIcon: () => <SVG name='home-tab' size={20} />,
           title: 'Topics',
           headerShown: false,
@@ -189,20 +189,20 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name={'GroupsScreen'}
         options={{
-          tabBarLabel: t("BottomNav_groups"),
+          tabBarLabel: t('BottomNav_groups'),
           tabBarIcon: () => <SVG name='group' size={20} />,
           title: 'Groups',
-          headerShown: false
+          headerShown: false,
         }}
         component={Group}
       />
       <BottomTab.Screen
         name={'QuizScreen'}
         options={{
-          tabBarLabel: "Quiz",
+          tabBarLabel: 'Quiz',
           tabBarIcon: () => <SVG name='quiz' size={20} />,
           title: 'Quiz',
-          headerShown: false
+          headerShown: false,
         }}
         component={Quiz}
       />
@@ -210,10 +210,10 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name={'ChatsScreen'}
         options={{
-          tabBarLabel: t("BottomNav_chats"),
+          tabBarLabel: t('BottomNav_chats'),
           tabBarIcon: () => <ChatSVG width={20} color={'gold'} />,
           title: 'Chats',
-          headerShown: false
+          headerShown: false,
         }}
         component={Chat}
       />
@@ -221,14 +221,13 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name={'SearchScreen'}
         options={{
-          tabBarLabel: t("BottomNav_search"),
+          tabBarLabel: t('BottomNav_search'),
           tabBarIcon: () => <SVG name='search' size={20} />,
           title: 'Search',
-          headerShown: false
+          headerShown: false,
         }}
         component={Search}
       />
-      
     </BottomTab.Navigator>
   );
 }
@@ -258,7 +257,7 @@ export function BottomTabStack({ navigation }: any) {
               <ConvoNotification navigation={navigation} />
             </SafeAreaView>
           ),
-          headerStyle: { backgroundColor:'#fff'},
+          headerStyle: { backgroundColor: '#fff' },
           headerShadowVisible: false,
         }}
         name='home-landing'
@@ -267,23 +266,27 @@ export function BottomTabStack({ navigation }: any) {
 
       <Stack.Screen
         options={{
-
           headerShown: false,
         }}
         name='convos'
         component={Convo}
       />
+
       <Stack.Screen
-    
-    name='ChallengeMode'
-    component={ChallengeMode}
-  />
-  
-<Stack.Screen
-  
-  name='GameMode'
-  component={GameMode}
-/>
+        options={{
+          headerShown: false,
+        }}
+        name='ChallengeMode'
+        component={ChallengeMode}
+      />
+
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+        name='GameMode'
+        component={GameMode}
+      />
     </Stack.Navigator>
   );
 }

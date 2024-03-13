@@ -1,10 +1,12 @@
 {
   "expo": {
-    "name": "PennytotExpo",
+    "name": "Pennytots",
     "slug": "pennytots",
-    "version": "1.0.0",
+    "entryPoint": "app/App.tsx",
+    "version": "4.0.2",
     "updates": {
-      "useClassicUpdates": true
+      "useClassicUpdates": true,
+      "url": "https://u.expo.dev/861158c3-27ca-411b-b2ff-6ff99afceb62"
     },
     "plugins": [
       [
@@ -37,7 +39,6 @@
         {
           "icon": "app/assets/logo_new.png",
           "color": "#ffffff"
-          
         }
       ]
     ],
@@ -57,7 +58,8 @@
       "infoPlist": {
         "NSContactsUsageDescription": "Allow PennytotExpo to access your contacts."
       },
-      "bundleIdentifier": "com.ibkay998.pennytots"
+      "bundleIdentifier": "com.pennytots.app",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
@@ -69,7 +71,9 @@
         "android.permission.RECORD_AUDIO",
         "android.permission.READ_CONTACTS",
         "android.permission.WRITE_CONTACTS"
-      ]
+      ],
+      "package": "com.pennytots.app",
+      "versionCode": 9
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -79,6 +83,9 @@
         "projectId": "861158c3-27ca-411b-b2ff-6ff99afceb62"
       }
     },
-    "owner": "ibkay998"
+    "owner": "ibkay998",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
   }
 }
