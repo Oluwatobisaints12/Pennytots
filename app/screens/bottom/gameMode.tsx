@@ -81,6 +81,9 @@ const OptionButton = ({
 };
 
 const GameMode = () => {
+  const [questionNumber, setQuestionNumber] = useState(1)
+
+
   const route = useRoute();
 
   // Access the 'text' parameter from the route params
@@ -90,40 +93,55 @@ const GameMode = () => {
     isLoading,
     refetch: getNextQuestion,
   } = useGetQuestions();
+  
   const { mutate: changeUserPennytots } = useChangeUserPennytots();
   const [selectedOption, setSelectedOption] = useState(null);
   const [goToNext, setGoToNext] = useState(false);
   const [score, setScore] = useState(0);
   const [isCorrect, setIsCorrect] = useState<any>(null);
-  const { data: credits, refetch } = useGetCredit();
+  const { data: credits, refetch} = useGetCredit(); // Destructure setCredits
+
   const [isCurrentSelectionCorrect, setIsCurrentSelectionCorrect] = useState<any>(null);
   const [showScoreMessage, setShowScoreMessage] = useState(false);
   const [image, setImage] = useState(null);
   const { question, options, answer: correctAnswer } = quizData || {};
   const [end, setEnd] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(60); // 30 seconds countdown
-  const [questionNumber, setQuestionNumber] = useState(1); // Initialize question number to 1
+  const [timeLeft, setTimeLeft] = useState(120); 
+  const [gameOver, setGameOver] = useState(false)
+  const [gameWin, setGameWin] = useState(false)
+  const [questionCount, setQuestionCount] = useState(0)
+  const [updatedAmount, setUpdatedAmount] = useState(null); // Define updatedAmount in the component's state
 
-  const handleNavigateToGameMode = () => {
-    // You can do some validation here before navigating
-    navigation.navigate('GameMode', { text: stake }); // Passing the 'text' parameter
-  };
+  const [intervalId, setIntervalId] = useState<NodeJS.Timeout | null>(null);
 
 
+  useEffect(()=>{
+     if (timeLeft === 0){
+      setGameOver(true)
+     }
+  }, [timeLeft])
+
+  useEffect(()=>{
+    if(isCurrentSelectionCorrect === false){
+      setGameOver(true)
+    }
+  }, [isCurrentSelectionCorrect])
+
+ 
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft((prevTime) => {
-        if (prevTime === 0 || isCurrentSelectionCorrect === false) {
-          clearInterval(timer); // Stop the timer when time reaches 0 or isCurrentSelectionCorrect is false
+        if (prevTime === 0 || gameOver || gameWin) {
+          clearInterval(timer); // Stop the timer when time reaches 0 or gameOver is true
           return prevTime;
         }
         return prevTime - 1;
       });
     }, 1000);
-
-    // Cleanup function to clear the interval when the component unmounts
+  
+    // Cleanup function to clear the interval when the component unmounts or when the game is over
     return () => clearInterval(timer);
-  }, [isCurrentSelectionCorrect]);
+  }, [gameOver, gameWin]); // Include gameOver in the dependency array
   
 
   // Effect to navigate when time is up
@@ -135,7 +153,7 @@ const GameMode = () => {
   }, [timeLeft]);
   
   const formatTimeLeft = () => {
-    const minutes = Math.floor(timeLeft / 60);
+    const minutes = Math.floor(timeLeft / 60) ;
     const seconds = timeLeft % 60;
     return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
   };
@@ -150,6 +168,11 @@ const GameMode = () => {
 
   
 };
+const handleNavigateChallenge = () => {
+  navigation.navigate('ChallengeMode',  {gameWin: true}); // Ensure that 'gameWin' is passed correctly
+};
+
+
   // function to get random image
   const getRandomImage = () => {
     const images = [
@@ -159,11 +182,40 @@ const GameMode = () => {
 
   };
 
-  useEffect(() => {
-    getNextQuestion(); // Fetch the first question when the component mounts
-  }, []);
 
+  useEffect(() => {
+    if (questionCount >= 1 && isCurrentSelectionCorrect) {
+      setGameWin(true);
+      
+    } 
+  }, [questionCount, isCurrentSelectionCorrect]);
+  
+  useEffect(() => {
+    const updateCredits = async () => {
+      if (gameWin && credits) { // Check if gameWin is true and credits exists
+        try {
+          const updatedAmount = credits.amount + 500; // Add 500 to the current amount
+          await changeUserPennytots(updatedAmount); // Update the user's pennytots with the new amount
+          await refetch(); // Refetch the data
+        } catch (error) {
+          // Handle errors if necessary
+          console.error('Error updating credits:', error);
+        }
+      }
+    };
+
+    updateCredits();
+  }, [gameWin, credits, refetch]);
+ 
+ 
+  
   const handleOptionSelect = async (option: any) => {
+      // getNextQuestion(); // Fetch the next question
+      
+     
+      
+    
+      
     if (timeLeft === 0) {
       return;
     }
@@ -171,14 +223,12 @@ const GameMode = () => {
     const isCorrect = option === correctAnswer;
 
     // If the selected option is correct, increase the question number by 1
-    if (isCorrect) {
-      setQuestionNumber((prevQuestionNumber) => prevQuestionNumber + 1);
-    }
+  
     // Submit the selected option to the backend
     try {
       const isAnswerCorrect = option === correctAnswer;
       setIsCorrect(isAnswerCorrect);
-  
+     
       setEnd(true);
       setShowScoreMessage(true);
       setTimeout(() => {
@@ -207,6 +257,18 @@ const GameMode = () => {
   };
 
   const handleNextQuestion = () => {
+     if(questionCount >=29 && isCurrentSelectionCorrect){
+      return;
+     }
+
+    setQuestionCount((prevCount)=>
+      prevCount +1
+    )
+
+    if (isCorrect ) {
+      setQuestionNumber((prevQuestionNumber) => prevQuestionNumber + 1);
+    }
+    
     if (timeLeft === 0) {
       return;
     }
@@ -264,8 +326,13 @@ const GameMode = () => {
          
         </View>
       </View>
-      {isLoading && <Text>Loading...</Text>}
-      {!isLoading && <Text>{question}</Text>}
+      {questionCount <= 2 && (
+  <View>
+    {isLoading && <Text>Loading...</Text>}
+    {!isLoading && <Text>{quizData?.question}</Text>}
+  </View>
+)}
+
 
       <View
         style={{
@@ -285,40 +352,70 @@ const GameMode = () => {
           />
         ))}
       </View>
-      {isCorrect && (
-  <Animation image={image} end={end}/>
-)}
-      {timeLeft === 0 || isCurrentSelectionCorrect === false && (
-      <View style={{ alignItems: 'center', marginTop: 27 }}>
-        <View style={styles.container}>
-          <Image source={Wrong1} style={styles.imageStyle} /> 
-        </View>
-        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#797978', lineHeight: 36, marginTop: 27}}>CHALLENGE OVER!</Text>
-        {/* Render a button to continue */}
-        <TouchableOpacity onPress={handleNavigateToQuiz} style={{ marginTop: 39 }}>
-          <View style={{
-            padding: 10,
-            backgroundColor: '#FED830',
-            borderRadius: 32,
-            width: 364,
-            height: 48,
-            paddingVertical: 12, // padding vertical
-            paddingHorizontal: 8, // padding horizontal
-            justifyContent: 'center', // center vertically
-            alignItems: 'center' // center horizontally
-          }}>
-            <Text style={{  fontSize: rv(14), color: '#48463E', lineHeight: 24, fontFamily: 'regular', }}>Back to Game Mode</Text>
-          </View>
-        </TouchableOpacity>
-      </View>
+     {!gameWin && isCorrect && (
+      <Animation image={image} end={end} />
     )}
+   {(gameOver) && (
+  <View style={{ alignItems: 'center', marginTop: 27 }}>
+    <View style={styles.container}>
+      <Image source={Wrong1} style={styles.imageStyle} /> 
+    </View>
+    <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#797978', lineHeight: 36, marginTop: 27}}>CHALLENGE OVER!</Text>
+    {/* Render a button to continue */}
+    <TouchableOpacity onPress={handleNavigateToQuiz} style={{ marginTop: 39 }}>
+      <View style={{
+        padding: 10,
+        backgroundColor: '#FED830',
+        borderRadius: 32,
+        width: 364,
+        height: 48, 
+        paddingVertical: 12, // padding vertical
+        paddingHorizontal: 8, // padding horizontal
+        justifyContent: 'center', // center vertically
+        alignItems: 'center' // center horizontally
+      }}>
+        <Text style={{  fontSize: rv(14), color: '#48463E', lineHeight: 24, fontFamily: 'regular', }}>Back to Game Mode</Text>
+      </View>
+    </TouchableOpacity>
+  </View>
+)}
 
-     
+{gameWin && (
+  <View style={{ alignItems: 'center', marginTop: 27 }}>
+    <View style={styles.container}>
+      <Image source={Wrong1} style={styles.imageStyle} /> 
+    </View>
+    <TouchableOpacity onPress={handleNavigateChallenge} style={{ marginTop: 39 }}>
+      <View style={{
+        padding: 10,
+        backgroundColor: '#FED830',
+        borderRadius: 32,
+        width: 364,
+        height: 48, 
+        paddingVertical: 12,
+        paddingHorizontal: 8,
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}>
+        <Text style={{ fontSize: rv(14), color: '#48463E', lineHeight: 24, fontFamily: 'regular' }}>Try Again</Text>
+        {updatedAmount !== null && (
+          <Text style={{ fontSize: rv(14), color: '#48463E', lineHeight: 24, fontFamily: 'regular' }}>
+            Updated Score: {updatedAmount}
+          </Text>
+        )}
+      </View>
+    </TouchableOpacity>
+  </View>
+)}
+
+
+
+
 
 {/* Remove the Animation component */}
 
 
-      {goToNext && (
+      {!gameWin && goToNext && (
         <TouchableOpacity
           style={{
             position: "absolute",

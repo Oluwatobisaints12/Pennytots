@@ -13,6 +13,9 @@ import { responsiveValue as rv } from 'app/providers/responsive-value';
 import Animation from 'app/components/animation';
 import { useGetQuestions, useChangeUserPennytots } from 'app/redux/quiz/hook';
 import { useNavigation } from '@react-navigation/native';
+import CreditScreen from 'app/screens/drawer/credit';
+import Credits from 'app/navigation/home/drawer'
+import { NavigationProp } from '@react-navigation/native';
 
 
 const Loading = require('../../assets/loading.gif');
@@ -81,13 +84,20 @@ const OptionButton = ({
   );
 };
 
+interface CreditsData {
+  amount: number;
+  // Add other properties if available
+}
 const Quiz = () => {
+
   const {
     data: quizData,
     isLoading,
     refetch: getNextQuestion,
     isFetching,
   } = useGetQuestions();
+
+
   const [data1, setData1] = useState<any>(null);
   const [localLoading, setLocalLoading] = useState(false);
   const { mutate: changeUserPennytots } = useChangeUserPennytots();
@@ -96,6 +106,7 @@ const Quiz = () => {
   const [score, setScore] = useState(0);
   const [isCorrect, setIsCorrect] = useState<any>(null);
   const { data: credits, refetch } = useGetCredit();
+
   const [isCurrentSelectionCorrect, setIsCurrentSelectionCorrect] =
     useState<any>(null);
   const [showScoreMessage, setShowScoreMessage] = useState(false);
@@ -105,6 +116,11 @@ const Quiz = () => {
   const [canClick, setCanClick] = useState(true);
   const navigation = useNavigation();
 
+  useEffect(() => {
+    if (credits?.amount <= 50) {
+      navigation.navigate('Credits' as never );
+    }
+  }, []);
   // function to get random image
   const getRandomWrongImage = () => {
     const images = [Wrong1, Wrong2, Wrong3, Wrong4, Wrong5, Wrong6, Wrong7, Wrong8,Wrong9,Wrong10,Wrong11,Wrong12,Wrong13,Wrong14,Wrong15,Wrong16,Wrong17];
@@ -203,16 +219,18 @@ const Quiz = () => {
 
         <View style={{ flexDirection: 'column' }}>
           <View style={{ flexDirection: 'row' }}>
-            <Text
-              style={{
-                paddingRight: rv(4),
-                fontSize: rv(13),
-                fontWeight: '600',
-                color: '#696969',
-              }}
-            >
-              {credits?.amount}
-            </Text>
+          
+        <Text
+          style={{
+            paddingRight: rv(4),
+            fontSize: rv(13),
+            fontWeight: '600',
+            color: '#696969',
+          }}
+        >
+          {credits?.amount}
+        </Text>
+      
             <Text style={{ fontSize: rv(13), fontWeight: '600', color: '#696969' }}>
               Pennytots
             </Text>

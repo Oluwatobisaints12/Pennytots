@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   View,
   Text,
@@ -13,15 +13,34 @@ import { processFontFamily } from 'expo-font';
 import useFonts from 'app/hooks/useFont.js'; // Corrected import name
 import { useNavigation } from '@react-navigation/native';
 import { responsiveValue as rv } from 'app/providers/responsive-value';
+import { useRoute } from "@react-navigation/native";
+
+
+ type ChallengeModeRouteParams = {
+   gameWin: boolean;
+   // Add other route params if needed
+ };
+
 
 interface ChallengeModeProps {
   onChangeText: (text: string) => void;
   navigation: any; // Adjust the type according to your navigation prop type
   // Define the type of the 'onChangeText' prop
 }
+
+
 const ChallengeMode: React.FC<ChallengeModeProps> = ({ route }: any) => {
-  // Extract pennytot and credit from route.params
-  const { data: credits } = useGetCredit();
+  
+
+
+   const { gameWin } = route?.params || {};
+   const { data: credits, refetch } = useGetCredit();
+ 
+   useEffect(() => {
+     if (gameWin) {
+       refetch(credits + (5 * stake));
+     }
+   }, [gameWin]);
   const navigation = useNavigation(); // Get navigation object
 
   const [stake, setStake] = React.useState(200);
@@ -31,6 +50,11 @@ const ChallengeMode: React.FC<ChallengeModeProps> = ({ route }: any) => {
     }
   };
 
+
+
+
+
+  
   const handleDecrement = () => {
     if (stake > 200) { // Check if stake is greater than the minimum value
       setStake(stake - 50);
